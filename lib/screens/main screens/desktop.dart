@@ -10,6 +10,9 @@ import 'package:portfolio/functions/Custom_backdrop_filter.dart';
 import 'package:portfolio/functions/custom_tooltip.dart';
 import 'package:portfolio/functions/hover%20effect.dart';
 import 'package:portfolio/functions/notifySnackBar.dart';
+import 'package:portfolio/screens/reponsive/responsive_contacts.dart';
+import 'package:portfolio/screens/reponsive/responstive_projects.dart';
+import 'package:portfolio/screens/widgets/navigate.dart';
 import 'package:portfolio/theme/theme.dart';
 import 'package:timeline_tile/timeline_tile.dart';
 
@@ -125,10 +128,7 @@ class _DesktopBodyState extends State<DesktopBody> {
                         height: 240.5,
                         child: GestureDetector(
                           onTap: () {
-                            // navigateTo(
-                            //   context,
-                            //   const toResponsiveLayout_contactMe(),
-                            // );
+                            navigateTo(context, const ResponsiveContacts());
                           },
                           child: MouseRegion(
                             cursor: SystemMouseCursors.click,
@@ -570,11 +570,10 @@ class _DesktopBodyState extends State<DesktopBody> {
                             children: [
                               GestureDetector(
                                 onTap: () {
-                                  // navigateTo(
-                                  //     context,
-                                  //     const toResponsiveLayout_project(
-                                  //       initialIndex: 0,
-                                  //     ));
+                                  navigateTo(
+                                    context,
+                                    const ResponstiveProjects(initialIndex: 0),
+                                  );
                                 },
                                 child: MouseRegion(
                                   cursor: SystemMouseCursors.click,
@@ -813,7 +812,7 @@ class _DesktopBodyState extends State<DesktopBody> {
                 ),
 
                 Column(
-                  children: [ 
+                  children: [
                     // Experiance
                     SizedBox(
                       height: 200.4,

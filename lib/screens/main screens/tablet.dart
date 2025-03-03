@@ -24,7 +24,6 @@ class TabletBody extends StatelessWidget {
   Widget build(BuildContext context) {
     double deviceWidth = MediaQuery.of(context).size.width;
     double deviceHeight = MediaQuery.of(context).size.height;
-    String rurl = 'https://github.com/nakuldevmv/Resume/blob/main/resume.pdf';
 
     return ScrollConfiguration(
       behavior: const ScrollBehavior().copyWith(scrollbars: false),
@@ -102,7 +101,7 @@ class TabletBody extends StatelessWidget {
                                                 ),
                                               ),
                                               TextSpan(
-                                                text: "</Jain>",
+                                                text: " Jain",
                                                 style: GoogleFonts.chakraPetch(
                                                   textStyle: textStyles.Name2,
                                                   fontSize: 20,
@@ -958,7 +957,8 @@ class TabletBody extends StatelessWidget {
                                               ? FittedBox(
                                                 fit: BoxFit.scaleDown,
                                                 child: Text(
-                                                  Educations[index].department,
+                                                  Educations[index].department
+                                                      .replaceAll('\n', ''),
                                                   style:
                                                       GoogleFonts.chakraPetch(
                                                         textStyle:
@@ -1168,12 +1168,15 @@ class TabletBody extends StatelessWidget {
                                             FittedBox(
                                               fit: BoxFit.scaleDown,
                                               child: Text(
-                                                Experiences[index].role,
+                                                Experiences[index].role
+                                                    .replaceAll('\n', ''),
                                                 style: GoogleFonts.chakraPetch(
-                                                  textStyle: textStyles.edu_H_B,
+                                                  textStyle: textStyles.edu_H_B
+                                                      .copyWith(fontSize: 20),
                                                 ),
                                               ),
                                             ),
+                                            SizedBox(height: 5),
                                             FittedBox(
                                               fit: BoxFit.scaleDown,
                                               child: Row(
@@ -1236,7 +1239,8 @@ class TabletBody extends StatelessWidget {
                                               child: Text(
                                                 Experiences[index].companyName,
                                                 style: GoogleFonts.chakraPetch(
-                                                  textStyle: textStyles.edu_P_N,
+                                                  textStyle: textStyles.edu_P_N
+                                                      .copyWith(fontSize: 16),
                                                 ),
                                               ),
                                             ),

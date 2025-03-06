@@ -877,7 +877,7 @@ class _MobileBodyState extends State<MobileBody> {
                         ],
                       ),
                     ),
-                    SizedBox(height: deviceHeight * 0.015),
+                    SizedBox(height: deviceHeight * 0.0148),
                     SizedBox(
                       height: 141,
                       child: ListView.builder(
@@ -977,7 +977,8 @@ class _MobileBodyState extends State<MobileBody> {
                                       FittedBox(
                                         fit: BoxFit.scaleDown,
                                         child: Text(
-                                          Experiences[index].companyName,
+                                          Experiences[index].companyName
+                                              .replaceAll('\n', ''),
                                           style: GoogleFonts.chakraPetch(
                                             textStyle: textStyles.edu_P_N,
                                           ),

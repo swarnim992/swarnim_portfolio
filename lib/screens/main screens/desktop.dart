@@ -880,111 +880,109 @@ class _DesktopBodyState extends State<DesktopBody> {
                                           ),
                                         ),
                                         alignment: TimelineAlign.start,
-                                        endChild: Expanded(
-                                          child: Container(
-                                            padding:
-                                                EducationcontainerStyle.padding,
-                                            margin:
-                                                EducationcontainerStyle.margin,
-                                            decoration: BoxDecoration(
-                                              color:
-                                                  EducationcontainerStyle.color,
-                                              borderRadius:
-                                                  EducationcontainerStyle
-                                                      .borderRadius,
-                                            ),
-                                            child: Column(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment.start,
-                                              crossAxisAlignment:
-                                                  CrossAxisAlignment.start,
-                                              children: [
-                                                FittedBox(
-                                                  fit: BoxFit.scaleDown,
-                                                  child: Text(
-                                                    Experiences[index].role,
-                                                    style:
-                                                        GoogleFonts.chakraPetch(
-                                                          textStyle:
-                                                              textStyles
-                                                                  .edu_H_B,
-                                                        ),
-                                                  ),
+                                        endChild: Container(
+                                          padding:
+                                              EducationcontainerStyle.padding,
+                                          margin:
+                                              EducationcontainerStyle.margin,
+                                          decoration: BoxDecoration(
+                                            color:
+                                                EducationcontainerStyle.color,
+                                            borderRadius:
+                                                EducationcontainerStyle
+                                                    .borderRadius,
+                                          ),
+                                          child: Column(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.start,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              FittedBox(
+                                                fit: BoxFit.scaleDown,
+                                                child: Text(
+                                                  Experiences[index].role,
+                                                  style:
+                                                      GoogleFonts.chakraPetch(
+                                                        textStyle:
+                                                            textStyles
+                                                                .edu_H_B,
+                                                      ),
                                                 ),
-                                                FittedBox(
-                                                  fit: BoxFit.scaleDown,
-                                                  child: Row(
-                                                    children: [
-                                                      Text(
-                                                        Experiences[index]
-                                                            .startTime,
-                                                        style:
-                                                            GoogleFonts.chakraPetch(
-                                                              textStyle:
-                                                                  textStyles
-                                                                      .edu_P_L,
+                                              ),
+                                              FittedBox(
+                                                fit: BoxFit.scaleDown,
+                                                child: Row(
+                                                  children: [
+                                                    Text(
+                                                      Experiences[index]
+                                                          .startTime,
+                                                      style:
+                                                          GoogleFonts.chakraPetch(
+                                                            textStyle:
+                                                                textStyles
+                                                                    .edu_P_L,
+                                                          ),
+                                                    ),
+                                                    Text(
+                                                      ' - ',
+                                                      style:
+                                                          GoogleFonts.chakraPetch(
+                                                            textStyle:
+                                                                textStyles
+                                                                    .edu_P_L,
+                                                          ),
+                                                    ),
+                                                    Text(
+                                                      Experiences[index]
+                                                          .endTime,
+                                                      style:
+                                                          GoogleFonts.chakraPetch(
+                                                            textStyle:
+                                                                textStyles
+                                                                    .edu_P_L,
+                                                          ),
+                                                    ),
+                                                    Text(
+                                                      ' • ',
+                                                      style:
+                                                          GoogleFonts.chakraPetch(
+                                                            textStyle:
+                                                                textStyles
+                                                                    .edu_P_L,
+                                                          ),
+                                                    ),
+                                                    Text(
+                                                      Experiences[index]
+                                                          .duration,
+                                                      style: GoogleFonts.chakraPetch(
+                                                        textStyle: textStyles
+                                                            .edu_P_L
+                                                            .copyWith(
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .bold,
                                                             ),
                                                       ),
-                                                      Text(
-                                                        ' - ',
-                                                        style:
-                                                            GoogleFonts.chakraPetch(
-                                                              textStyle:
-                                                                  textStyles
-                                                                      .edu_P_L,
-                                                            ),
-                                                      ),
-                                                      Text(
-                                                        Experiences[index]
-                                                            .endTime,
-                                                        style:
-                                                            GoogleFonts.chakraPetch(
-                                                              textStyle:
-                                                                  textStyles
-                                                                      .edu_P_L,
-                                                            ),
-                                                      ),
-                                                      Text(
-                                                        ' • ',
-                                                        style:
-                                                            GoogleFonts.chakraPetch(
-                                                              textStyle:
-                                                                  textStyles
-                                                                      .edu_P_L,
-                                                            ),
-                                                      ),
-                                                      Text(
-                                                        Experiences[index]
-                                                            .duration,
-                                                        style: GoogleFonts.chakraPetch(
-                                                          textStyle: textStyles
-                                                              .edu_P_L
-                                                              .copyWith(
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .bold,
-                                                              ),
-                                                        ),
-                                                      ),
-                                                    ],
-                                                  ),
+                                                    ),
+                                                  ],
                                                 ),
-                                                SizedBox(
-                                                  // color: Colors.amber,
-                                                  // width: deviceWidth * 0.1,
-                                                  child: Text(
-                                                    Experiences[index]
-                                                        .companyName,
-                                                    style:
-                                                        GoogleFonts.chakraPetch(
-                                                          textStyle:
-                                                              textStyles
-                                                                  .edu_P_N,
-                                                        ),
-                                                  ),
+                                              ),
+                                              SizedBox(
+                                                // color: Colors.amber,
+                                                // width: deviceWidth * 0.1,
+                                                child: Text(
+                                                  Experiences[index]
+                                                      .companyName,
+                                                  style:
+                                                      GoogleFonts.chakraPetch(
+                                                        textStyle:
+                                                            textStyles
+                                                                .edu_P_N,
+                                                      ),
                                                 ),
-                                              ],
-                                            ),
+                                              ),
+                                            ],
                                           ),
                                         ),
                                       );
@@ -1080,102 +1078,99 @@ class _DesktopBodyState extends State<DesktopBody> {
                                           ),
                                         ),
                                         alignment: TimelineAlign.start,
-                                        endChild: Expanded(
-                                          flex: 5,
-                                          child: Container(
-                                            padding:
-                                                EducationcontainerStyle.padding,
-                                            margin:
-                                                EducationcontainerStyle.margin,
-                                            decoration: BoxDecoration(
-                                              color:
-                                                  EducationcontainerStyle.color,
-                                              borderRadius:
-                                                  EducationcontainerStyle
-                                                      .borderRadius,
-                                            ),
-                                            child: Column(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment.start,
-                                              crossAxisAlignment:
-                                                  CrossAxisAlignment.start,
-                                              children: [
-                                                FittedBox(
-                                                  fit: BoxFit.scaleDown,
-                                                  child: Text(
-                                                    Educations[index]
-                                                        .institutionName,
-                                                    style:
-                                                        GoogleFonts.chakraPetch(
-                                                          textStyle:
-                                                              textStyles
-                                                                  .edu_H_B,
-                                                        ),
-                                                  ),
+                                        endChild: Container(
+                                          padding:
+                                              EducationcontainerStyle.padding,
+                                          margin:
+                                              EducationcontainerStyle.margin,
+                                          decoration: BoxDecoration(
+                                            color:
+                                                EducationcontainerStyle.color,
+                                            borderRadius:
+                                                EducationcontainerStyle
+                                                    .borderRadius,
+                                          ),
+                                          child: Column(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.start,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              FittedBox(
+                                                fit: BoxFit.scaleDown,
+                                                child: Text(
+                                                  Educations[index]
+                                                      .institutionName,
+                                                  style:
+                                                      GoogleFonts.chakraPetch(
+                                                        textStyle:
+                                                            textStyles
+                                                                .edu_H_B,
+                                                      ),
                                                 ),
-                                                FittedBox(
-                                                  fit: BoxFit.scaleDown,
-                                                  child: Row(
-                                                    children: [
-                                                      Text(
-                                                        Educations[index]
-                                                            .startTime,
-                                                        style:
-                                                            GoogleFonts.chakraPetch(
-                                                              textStyle:
-                                                                  textStyles
-                                                                      .edu_P_L,
-                                                            ),
-                                                      ),
-                                                      const Text(" - "),
-                                                      Text(
-                                                        Educations[index]
-                                                            .endTime,
-                                                        style:
-                                                            GoogleFonts.chakraPetch(
-                                                              textStyle:
-                                                                  textStyles
-                                                                      .edu_P_L,
-                                                            ),
-                                                      ),
-                                                    ],
-                                                  ),
+                                              ),
+                                              FittedBox(
+                                                fit: BoxFit.scaleDown,
+                                                child: Row(
+                                                  children: [
+                                                    Text(
+                                                      Educations[index]
+                                                          .startTime,
+                                                      style:
+                                                          GoogleFonts.chakraPetch(
+                                                            textStyle:
+                                                                textStyles
+                                                                    .edu_P_L,
+                                                          ),
+                                                    ),
+                                                    const Text(" - "),
+                                                    Text(
+                                                      Educations[index]
+                                                          .endTime,
+                                                      style:
+                                                          GoogleFonts.chakraPetch(
+                                                            textStyle:
+                                                                textStyles
+                                                                    .edu_P_L,
+                                                          ),
+                                                    ),
+                                                  ],
                                                 ),
-                                                Educations[index].department !=
-                                                        ''
-                                                    ? FittedBox(
-                                                      fit: BoxFit.scaleDown,
-                                                      child: Text(
-                                                        Educations[index]
-                                                            .department,
-                                                        style: GoogleFonts.chakraPetch(
-                                                          textStyle: textStyles
-                                                              .edu_P_N
-                                                              .copyWith(
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .w500,
-                                                              ),
-                                                        ),
-                                                      ),
-                                                    )
-                                                    : const Offstage(),
-                                                Educations[index].grade != ''
-                                                    ? FittedBox(
-                                                      fit: BoxFit.scaleDown,
-                                                      child: Text(
-                                                        Educations[index].grade,
-                                                        style:
-                                                            GoogleFonts.chakraPetch(
-                                                              textStyle:
-                                                                  textStyles
-                                                                      .edu_P_N,
+                                              ),
+                                              Educations[index].department !=
+                                                      ''
+                                                  ? FittedBox(
+                                                    fit: BoxFit.scaleDown,
+                                                    child: Text(
+                                                      Educations[index]
+                                                          .department,
+                                                      style: GoogleFonts.chakraPetch(
+                                                        textStyle: textStyles
+                                                            .edu_P_N
+                                                            .copyWith(
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w500,
                                                             ),
                                                       ),
-                                                    )
-                                                    : const Offstage(),
-                                              ],
-                                            ),
+                                                    ),
+                                                  )
+                                                  : const Offstage(),
+                                              Educations[index].grade != ''
+                                                  ? FittedBox(
+                                                    fit: BoxFit.scaleDown,
+                                                    child: Text(
+                                                      Educations[index].grade,
+                                                      style:
+                                                          GoogleFonts.chakraPetch(
+                                                            textStyle:
+                                                                textStyles
+                                                                    .edu_P_N,
+                                                          ),
+                                                    ),
+                                                  )
+                                                  : const Offstage(),
+                                            ],
                                           ),
                                         ),
                                       );

@@ -131,31 +131,31 @@ class TabletBody extends StatelessWidget {
                                       text: TextSpan(
                                         children: [
                                           TextSpan(
-                                            text: "Building the ",
-                                            style: GoogleFonts.chakraPetch(
-                                              textStyle: textStyles.B,
-                                            ),
-                                          ),
-                                          TextSpan(
-                                            text: "Future",
+                                            text: "Bridging",
                                             style: GoogleFonts.chakraPetch(
                                               textStyle: textStyles.I,
                                             ),
                                           ),
                                           TextSpan(
-                                            text: ",\nOne Line of ",
+                                            text: " creativity",
                                             style: GoogleFonts.chakraPetch(
                                               textStyle: textStyles.B,
                                             ),
                                           ),
                                           TextSpan(
-                                            text: "Code",
+                                            text: ",\nand ",
                                             style: GoogleFonts.chakraPetch(
                                               textStyle: textStyles.I,
                                             ),
                                           ),
                                           TextSpan(
-                                            text: "\nat a Time",
+                                            text: "technology",
+                                            style: GoogleFonts.chakraPetch(
+                                              textStyle: textStyles.B,
+                                            ),
+                                          ),
+                                          TextSpan(
+                                            text: "\nthrough code.",
                                             style: GoogleFonts.chakraPetch(
                                               textStyle: textStyles.B,
                                             ),
@@ -624,7 +624,7 @@ class TabletBody extends StatelessWidget {
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.only(top: 10),
+                          padding: const EdgeInsets.only(top: 0),
                           child: SizedBox(
                             height: 170,
                             child: ListView.builder(
@@ -733,65 +733,66 @@ class TabletBody extends StatelessWidget {
                             ),
                           ),
                         ),
+                        SizedBox(height: 7,)
                         //prev_next
-                        Padding(
-                          padding: const EdgeInsets.only(right: 5, bottom: 3),
-                          child: Container(
-                            padding: const EdgeInsets.all(5),
-                            width:
-                                deviceWidth * tablet_containerStyle.widthButton,
-                            decoration: const BoxDecoration(
-                              borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(10),
-                                bottomRight: Radius.circular(10),
-                              ),
-                              // color: EducationcontainerStyle.color,
-                            ),
-                            child: Row(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                MouseRegion(
-                                  cursor: SystemMouseCursors.click,
-                                  child: GestureDetector(
-                                    onTap: () {
-                                      toPrevious(pgController);
-                                    },
-                                    child: Icon(
-                                      color: textStyles.B.color,
-                                      Icons.arrow_back_ios_new_rounded,
-                                      size:
-                                          deviceWidth < 900
-                                              ? tablet_containerStyle.iconSizeS
-                                              : tablet_containerStyle.iconSizeL,
-                                    ),
-                                  ),
-                                ),
-                                // Icon(
-                                //   color: textStyles.B.color,
-                                //   Icons.linear_scale_outlined,
-                                //   size: deviceWidth < 900 ? tablet_containerStyle.iconSizeS : tablet_containerStyle.iconSizeL,
-                                // ),
-                                MouseRegion(
-                                  cursor: SystemMouseCursors.click,
-                                  child: GestureDetector(
-                                    onTap: () {
-                                      toNext(projects.length, pgController);
-                                    },
-                                    child: Icon(
-                                      color: textStyles.B.color,
-                                      Icons.arrow_forward_ios_rounded,
-                                      size:
-                                          deviceWidth < 900
-                                              ? tablet_containerStyle.iconSizeS
-                                              : tablet_containerStyle.iconSizeL,
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
+                        // Padding(
+                        //   padding: const EdgeInsets.only(right: 5, bottom: 3),
+                        //   child: Container(
+                        //     padding: const EdgeInsets.all(5),
+                        //     width:
+                        //         deviceWidth * tablet_containerStyle.widthButton,
+                        //     decoration: const BoxDecoration(
+                        //       borderRadius: BorderRadius.only(
+                        //         topLeft: Radius.circular(10),
+                        //         bottomRight: Radius.circular(10),
+                        //       ),
+                        //       // color: EducationcontainerStyle.color,
+                        //     ),
+                        //     child: Row(
+                        //       crossAxisAlignment: CrossAxisAlignment.center,
+                        //       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        //       children: [
+                        //         MouseRegion(
+                        //           cursor: SystemMouseCursors.click,
+                        //           child: GestureDetector(
+                        //             onTap: () {
+                        //               toPrevious(pgController);
+                        //             },
+                        //             child: Icon(
+                        //               color: textStyles.B.color,
+                        //               Icons.arrow_back_ios_new_rounded,
+                        //               size:
+                        //                   deviceWidth < 900
+                        //                       ? tablet_containerStyle.iconSizeS
+                        //                       : tablet_containerStyle.iconSizeL,
+                        //             ),
+                        //           ),
+                        //         ),
+                        //         // Icon(
+                        //         //   color: textStyles.B.color,
+                        //         //   Icons.linear_scale_outlined,
+                        //         //   size: deviceWidth < 900 ? tablet_containerStyle.iconSizeS : tablet_containerStyle.iconSizeL,
+                        //         // ),
+                        //         MouseRegion(
+                        //           cursor: SystemMouseCursors.click,
+                        //           child: GestureDetector(
+                        //             onTap: () {
+                        //               toNext(projects.length, pgController);
+                        //             },
+                        //             child: Icon(
+                        //               color: textStyles.B.color,
+                        //               Icons.arrow_forward_ios_rounded,
+                        //               size:
+                        //                   deviceWidth < 900
+                        //                       ? tablet_containerStyle.iconSizeS
+                        //                       : tablet_containerStyle.iconSizeL,
+                        //             ),
+                        //           ),
+                        //         ),
+                        //       ],
+                        //     ),
+                        //   ),
+                        // ),
                       ],
                     ),
                   ),
@@ -881,87 +882,84 @@ class TabletBody extends StatelessWidget {
                                   ),
                                 ),
                                 alignment: TimelineAlign.start,
-                                endChild: Expanded(
-                                  flex: 5,
-                                  child: Padding(
-                                    padding: const EdgeInsets.only(top: 5),
-                                    child: Container(
-                                      padding: EducationcontainerStyle.padding,
-                                      margin: EducationcontainerStyle.margin,
-                                      decoration: BoxDecoration(
-                                        color: EducationcontainerStyle.color,
-                                        borderRadius:
-                                            EducationcontainerStyle
-                                                .borderRadius,
-                                      ),
-                                      child: Column(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.start,
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          FittedBox(
-                                            fit: BoxFit.scaleDown,
-                                            child: Text(
-                                              Educations[index].institutionName,
-                                              style: GoogleFonts.chakraPetch(
-                                                textStyle: textStyles.edu_H_B,
+                                endChild: Padding(
+                                  padding: const EdgeInsets.only(top: 5),
+                                  child: Container(
+                                    padding: EducationcontainerStyle.padding,
+                                    margin: EducationcontainerStyle.margin,
+                                    decoration: BoxDecoration(
+                                      color: EducationcontainerStyle.color,
+                                      borderRadius:
+                                          EducationcontainerStyle
+                                              .borderRadius,
+                                    ),
+                                    child: Column(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        FittedBox(
+                                          fit: BoxFit.scaleDown,
+                                          child: Text(
+                                            Educations[index].institutionName,
+                                            style: GoogleFonts.chakraPetch(
+                                              textStyle: textStyles.edu_H_B,
+                                            ),
+                                          ),
+                                        ),
+                                        FittedBox(
+                                          fit: BoxFit.scaleDown,
+                                          child: Row(
+                                            children: [
+                                              Text(
+                                                Educations[index].startTime,
+                                                style:
+                                                    GoogleFonts.chakraPetch(
+                                                      textStyle:
+                                                          textStyles.edu_P_L,
+                                                    ),
                                               ),
-                                            ),
+                                              const Text(" - "),
+                                              Text(
+                                                Educations[index].endTime,
+                                                style:
+                                                    GoogleFonts.chakraPetch(
+                                                      textStyle:
+                                                          textStyles.edu_P_L,
+                                                    ),
+                                              ),
+                                            ],
                                           ),
-                                          FittedBox(
-                                            fit: BoxFit.scaleDown,
-                                            child: Row(
-                                              children: [
-                                                Text(
-                                                  Educations[index].startTime,
-                                                  style:
-                                                      GoogleFonts.chakraPetch(
-                                                        textStyle:
-                                                            textStyles.edu_P_L,
-                                                      ),
-                                                ),
-                                                const Text(" - "),
-                                                Text(
-                                                  Educations[index].endTime,
-                                                  style:
-                                                      GoogleFonts.chakraPetch(
-                                                        textStyle:
-                                                            textStyles.edu_P_L,
-                                                      ),
-                                                ),
-                                              ],
-                                            ),
-                                          ),
-                                          Educations[index].department != ''
-                                              ? FittedBox(
-                                                fit: BoxFit.scaleDown,
-                                                child: Text(
-                                                  Educations[index].department
-                                                      .replaceAll('\n', ''),
-                                                  style:
-                                                      GoogleFonts.chakraPetch(
-                                                        textStyle:
-                                                            textStyles.edu_P_N,
-                                                      ),
-                                                ),
-                                              )
-                                              : const Offstage(),
-                                          Educations[index].grade != ''
-                                              ? FittedBox(
-                                                fit: BoxFit.scaleDown,
-                                                child: Text(
-                                                  Educations[index].grade,
-                                                  style:
-                                                      GoogleFonts.chakraPetch(
-                                                        textStyle:
-                                                            textStyles.edu_P_N,
-                                                      ),
-                                                ),
-                                              )
-                                              : const Offstage(),
-                                        ],
-                                      ),
+                                        ),
+                                        Educations[index].department != ''
+                                            ? FittedBox(
+                                              fit: BoxFit.scaleDown,
+                                              child: Text(
+                                                Educations[index].department
+                                                    .replaceAll('\n', ''),
+                                                style:
+                                                    GoogleFonts.chakraPetch(
+                                                      textStyle:
+                                                          textStyles.edu_P_N,
+                                                    ),
+                                              ),
+                                            )
+                                            : const Offstage(),
+                                        Educations[index].grade != ''
+                                            ? FittedBox(
+                                              fit: BoxFit.scaleDown,
+                                              child: Text(
+                                                Educations[index].grade,
+                                                style:
+                                                    GoogleFonts.chakraPetch(
+                                                      textStyle:
+                                                          textStyles.edu_P_N,
+                                                    ),
+                                              ),
+                                            )
+                                            : const Offstage(),
+                                      ],
                                     ),
                                   ),
                                 ),
@@ -970,65 +968,65 @@ class TabletBody extends StatelessWidget {
                           ),
                         ),
                         const Spacer(),
-                        Padding(
-                          padding: const EdgeInsets.only(right: 5, left: 3),
-                          child: Container(
-                            padding: const EdgeInsets.all(5),
-                            margin: const EdgeInsets.all(0),
-                            width:
-                                deviceWidth * tablet_containerStyle.widthButton,
-                            decoration: const BoxDecoration(
-                              borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(10),
-                                bottomRight: Radius.circular(10),
-                              ),
-                              // color: EducationcontainerStyle.color,
-                            ),
-                            child: Row(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                MouseRegion(
-                                  cursor: SystemMouseCursors.click,
-                                  child: GestureDetector(
-                                    onTap: () {
-                                      toPrevious(pgController2);
-                                    },
-                                    child: Icon(
-                                      color: textStyles.B.color,
-                                      Icons.arrow_back_ios_new_rounded,
-                                      size:
-                                          deviceWidth < 900
-                                              ? tablet_containerStyle.iconSizeS
-                                              : tablet_containerStyle.iconSizeL,
-                                    ),
-                                  ),
-                                ),
-                                // Icon(
-                                //   color: textStyles.B.color,
-                                //   Icons.linear_scale_outlined,
-                                //   size: deviceWidth < 900 ? tablet_containerStyle.iconSizeS : tablet_containerStyle.iconSizeL,
-                                // ),
-                                MouseRegion(
-                                  cursor: SystemMouseCursors.click,
-                                  child: GestureDetector(
-                                    onTap: () {
-                                      toNext(Educations.length, pgController2);
-                                    },
-                                    child: Icon(
-                                      color: textStyles.B.color,
-                                      Icons.arrow_forward_ios_rounded,
-                                      size:
-                                          deviceWidth < 900
-                                              ? tablet_containerStyle.iconSizeS
-                                              : tablet_containerStyle.iconSizeL,
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
+                        // Padding(
+                        //   padding: const EdgeInsets.only(right: 5, left: 3),
+                        //   child: Container(
+                        //     padding: const EdgeInsets.all(5),
+                        //     margin: const EdgeInsets.all(0),
+                        //     width:
+                        //         deviceWidth * tablet_containerStyle.widthButton,
+                        //     decoration: const BoxDecoration(
+                        //       borderRadius: BorderRadius.only(
+                        //         topLeft: Radius.circular(10),
+                        //         bottomRight: Radius.circular(10),
+                        //       ),
+                        //       // color: EducationcontainerStyle.color,
+                        //     ),
+                        //     child: Row(
+                        //       crossAxisAlignment: CrossAxisAlignment.center,
+                        //       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        //       children: [
+                        //         MouseRegion(
+                        //           cursor: SystemMouseCursors.click,
+                        //           child: GestureDetector(
+                        //             onTap: () {
+                        //               toPrevious(pgController2);
+                        //             },
+                        //             child: Icon(
+                        //               color: textStyles.B.color,
+                        //               Icons.arrow_back_ios_new_rounded,
+                        //               size:
+                        //                   deviceWidth < 900
+                        //                       ? tablet_containerStyle.iconSizeS
+                        //                       : tablet_containerStyle.iconSizeL,
+                        //             ),
+                        //           ),
+                        //         ),
+                        //         // Icon(
+                        //         //   color: textStyles.B.color,
+                        //         //   Icons.linear_scale_outlined,
+                        //         //   size: deviceWidth < 900 ? tablet_containerStyle.iconSizeS : tablet_containerStyle.iconSizeL,
+                        //         // ),
+                        //         MouseRegion(
+                        //           cursor: SystemMouseCursors.click,
+                        //           child: GestureDetector(
+                        //             onTap: () {
+                        //               toNext(Educations.length, pgController2);
+                        //             },
+                        //             child: Icon(
+                        //               color: textStyles.B.color,
+                        //               Icons.arrow_forward_ios_rounded,
+                        //               size:
+                        //                   deviceWidth < 900
+                        //                       ? tablet_containerStyle.iconSizeS
+                        //                       : tablet_containerStyle.iconSizeL,
+                        //             ),
+                        //           ),
+                        //         ),
+                        //       ],
+                        //     ),
+                        //   ),
+                        // ),
                       ],
                     ),
                   ),
@@ -1125,107 +1123,104 @@ class TabletBody extends StatelessWidget {
                                     ),
                                   ),
                                   alignment: TimelineAlign.start,
-                                  endChild: Expanded(
-                                    // flex: 5,
-                                    child: Padding(
-                                      padding: const EdgeInsets.only(top: 5),
-                                      child: Container(
-                                        padding:
-                                            EducationcontainerStyle.padding,
-                                        margin: EducationcontainerStyle.margin,
-                                        decoration: BoxDecoration(
-                                          color: EducationcontainerStyle.color,
-                                          borderRadius:
-                                              EducationcontainerStyle
-                                                  .borderRadius,
-                                        ),
-                                        child: Column(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.start,
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            FittedBox(
-                                              fit: BoxFit.scaleDown,
-                                              child: Text(
-                                                Experiences[index].role
-                                                    .replaceAll('\n', ''),
-                                                style: GoogleFonts.chakraPetch(
-                                                  textStyle: textStyles.edu_H_B
-                                                      .copyWith(fontSize: 20),
+                                  endChild: Padding(
+                                    padding: const EdgeInsets.only(top: 5),
+                                    child: Container(
+                                      padding:
+                                          EducationcontainerStyle.padding,
+                                      margin: EducationcontainerStyle.margin,
+                                      decoration: BoxDecoration(
+                                        color: EducationcontainerStyle.color,
+                                        borderRadius:
+                                            EducationcontainerStyle
+                                                .borderRadius,
+                                      ),
+                                      child: Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.start,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          FittedBox(
+                                            fit: BoxFit.scaleDown,
+                                            child: Text(
+                                              Experiences[index].role
+                                                  .replaceAll('\n', ''),
+                                              style: GoogleFonts.chakraPetch(
+                                                textStyle: textStyles.edu_H_B
+                                                    .copyWith(fontSize: 20),
+                                              ),
+                                            ),
+                                          ),
+                                          SizedBox(height: 5),
+                                          FittedBox(
+                                            fit: BoxFit.scaleDown,
+                                            child: Row(
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.start,
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
+                                              children: [
+                                                Text(
+                                                  Experiences[index]
+                                                      .startTime,
+                                                  style:
+                                                      GoogleFonts.chakraPetch(
+                                                        textStyle:
+                                                            textStyles
+                                                                .edu_P_L,
+                                                      ),
                                                 ),
-                                              ),
-                                            ),
-                                            SizedBox(height: 5),
-                                            FittedBox(
-                                              fit: BoxFit.scaleDown,
-                                              child: Row(
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment.start,
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.start,
-                                                children: [
-                                                  Text(
-                                                    Experiences[index]
-                                                        .startTime,
-                                                    style:
-                                                        GoogleFonts.chakraPetch(
-                                                          textStyle:
-                                                              textStyles
-                                                                  .edu_P_L,
-                                                        ),
-                                                  ),
-                                                  Text(
-                                                    ' - ',
-                                                    style:
-                                                        GoogleFonts.chakraPetch(
-                                                          textStyle:
-                                                              textStyles
-                                                                  .edu_P_L,
-                                                        ),
-                                                  ),
-                                                  Text(
-                                                    Experiences[index].endTime,
-                                                    style:
-                                                        GoogleFonts.chakraPetch(
-                                                          textStyle:
-                                                              textStyles
-                                                                  .edu_P_L,
-                                                        ),
-                                                  ),
-                                                  Text(
-                                                    ' • ',
-                                                    style:
-                                                        GoogleFonts.chakraPetch(
-                                                          textStyle:
-                                                              textStyles
-                                                                  .edu_P_L,
-                                                        ),
-                                                  ),
-                                                  Text(
-                                                    Experiences[index].duration,
-                                                    style:
-                                                        GoogleFonts.chakraPetch(
-                                                          textStyle:
-                                                              textStyles
-                                                                  .edu_P_L,
-                                                        ),
-                                                  ),
-                                                ],
-                                              ),
-                                            ),
-                                            FittedBox(
-                                              fit: BoxFit.scaleDown,
-                                              child: Text(
-                                                Experiences[index].companyName,
-                                                style: GoogleFonts.chakraPetch(
-                                                  textStyle: textStyles.edu_P_N
-                                                      .copyWith(fontSize: 16),
+                                                Text(
+                                                  ' - ',
+                                                  style:
+                                                      GoogleFonts.chakraPetch(
+                                                        textStyle:
+                                                            textStyles
+                                                                .edu_P_L,
+                                                      ),
                                                 ),
+                                                Text(
+                                                  Experiences[index].endTime,
+                                                  style:
+                                                      GoogleFonts.chakraPetch(
+                                                        textStyle:
+                                                            textStyles
+                                                                .edu_P_L,
+                                                      ),
+                                                ),
+                                                Text(
+                                                  ' • ',
+                                                  style:
+                                                      GoogleFonts.chakraPetch(
+                                                        textStyle:
+                                                            textStyles
+                                                                .edu_P_L,
+                                                      ),
+                                                ),
+                                                Text(
+                                                  Experiences[index].duration,
+                                                  style:
+                                                      GoogleFonts.chakraPetch(
+                                                        textStyle:
+                                                            textStyles
+                                                                .edu_P_L,
+                                                      ),
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                          FittedBox(
+                                            fit: BoxFit.scaleDown,
+                                            child: Text(
+                                              Experiences[index].companyName,
+                                              style: GoogleFonts.chakraPetch(
+                                                textStyle: textStyles.edu_P_N
+                                                    .copyWith(fontSize: 16),
                                               ),
                                             ),
-                                          ],
-                                        ),
+                                          ),
+                                        ],
                                       ),
                                     ),
                                   ),

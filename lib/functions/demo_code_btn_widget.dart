@@ -20,7 +20,8 @@ class demo_code_button extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           //code btn
-          MouseRegion(
+          if(projects[index].githubLink !='')...[
+            MouseRegion(
             cursor: SystemMouseCursors.click,
             child: GestureDetector(
               onTap: () {
@@ -89,8 +90,10 @@ class demo_code_button extends StatelessWidget {
               ),
             ),
           ),
+          ],
           //demo btn
-          MouseRegion(
+          if(projects[index].demoVideoLink != '')...[
+            MouseRegion(
             cursor: SystemMouseCursors.click,
             child: GestureDetector(
               onTap: () {
@@ -163,6 +166,7 @@ class demo_code_button extends StatelessWidget {
               ),
             ),
           ),
+          ],
         ],
       ),
     );

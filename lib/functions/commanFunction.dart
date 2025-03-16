@@ -65,7 +65,7 @@ Future<void> downloadResume(String url) async {
     final anchorElement =
         AnchorElement(href: url)
           ..download =
-              "Nakul_Dev_Resume.pdf" // File name for download
+              "Swarnim_Jain.pdf" // File name for download
           ..click();
 
     // Clean up the object URL after download

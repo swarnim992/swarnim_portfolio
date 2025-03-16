@@ -102,31 +102,31 @@ class _MobileBodyState extends State<MobileBody> {
                                   text: TextSpan(
                                     children: [
                                       TextSpan(
-                                        text: "Building the ",
-                                        style: GoogleFonts.chakraPetch(
-                                          textStyle: textStyles.B,
-                                        ),
-                                      ),
-                                      TextSpan(
-                                        text: "Future",
+                                        text: "Bridging",
                                         style: GoogleFonts.chakraPetch(
                                           textStyle: textStyles.I,
                                         ),
                                       ),
                                       TextSpan(
-                                        text: ",\nOne Line of ",
+                                        text: " creativity",
                                         style: GoogleFonts.chakraPetch(
                                           textStyle: textStyles.B,
                                         ),
                                       ),
                                       TextSpan(
-                                        text: "Code",
+                                        text: ",\nand ",
                                         style: GoogleFonts.chakraPetch(
                                           textStyle: textStyles.I,
                                         ),
                                       ),
                                       TextSpan(
-                                        text: "\nat a Time",
+                                        text: "technology",
+                                        style: GoogleFonts.chakraPetch(
+                                          textStyle: textStyles.B,
+                                        ),
+                                      ),
+                                      TextSpan(
+                                        text: "\nthrough code.",
                                         style: GoogleFonts.chakraPetch(
                                           textStyle: textStyles.B,
                                         ),

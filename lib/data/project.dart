@@ -41,8 +41,8 @@ List<Project> projects = [
     description:
         "Trinity is a SilverStripe CMS-based website that I worked on for ensuring smooth performance, updates, and issue resolution.",
     icon: Icons.text_fields_sharp,
-    flutterSvg: "assets/svg/flutter.svg",
-    dartSvg: "assets/svg/dart.svg",
+    flutterSvg: "assets/svg/html.svg",
+    dartSvg: "assets/svg/silverstripe.svg",
     keyFeatures:
         "• Optimizations, and feature enhancements.\n• Performance Improvements.\n• Content & Code Updates.\n• Seamless User Experience.",
     githubLink: "",
@@ -57,8 +57,8 @@ List<Project> projects = [
     description:
         "Automation Script Making is a Python-based project that automates data extraction, processing, and alerting by gathering information from various websites and notifying users of relevant matches.",
     icon: Icons.autofps_select_outlined,
-    flutterSvg: "assets/svg/flutter.svg",
-    dartSvg: "assets/svg/dart.svg",
+    flutterSvg: "assets/svg/python.svg",
+    dartSvg: "assets/svg/python.svg",
     keyFeatures:
         "• Optimized Data Processing.\n• Web Data Scraping.\n• Automated Alerts.\n• Performance Optimization.",
     githubLink: "",

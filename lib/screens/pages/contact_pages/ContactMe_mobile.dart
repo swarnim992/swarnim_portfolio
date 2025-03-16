@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/functions/Custom_backdrop_filter.dart';
-import 'package:portfolio/functions/GoogleMap_Integration.dart';
 import 'package:portfolio/functions/commanFunction.dart';
 import 'package:portfolio/functions/launch_url.dart';
 import 'package:portfolio/theme/theme.dart';
@@ -37,23 +36,16 @@ class _ContactMe_mobileState extends State<ContactMe_mobile> {
                   decoration: BoxDecoration(
                     color: ContactMe_containerStyle_mobile.color,
                     borderRadius: ContactMe_containerStyle_mobile.borderRadius,
-                    // image: DecorationImage(
-                    //   image: AssetImage('assets/locD.png'),
-                    //   fit: BoxFit.cover,
-                    // ),
+                    image: DecorationImage(
+                      image: AssetImage('assets/nashik.jpeg'),
+                      fit: BoxFit.cover,
+                    ),
                   ),
                   // padding: ContactMe_containerStyle_mobile.padding,
                   margin: ContactMe_containerStyle_mobile.margin,
                   width:
                       deviceWidth * ContactMe_containerStyle_mobile.loc_width,
                   height: 250,
-                  child: ClipRRect(
-                    borderRadius: ContactMe_containerStyle_tablet.borderRadius,
-                    child: const MouseRegion(
-                      cursor: SystemMouseCursors.grab,
-                      child: RandomLocationMap(),
-                    ),
-                  ),
                   // height: deviceHeight * ContactMe_containerStyle_mobile.loc_height,
                 ),
                 Positioned(

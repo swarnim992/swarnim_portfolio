@@ -143,12 +143,6 @@ class _NavigationWrapperState extends State<NavigationWrapper> {
                         semanticLabel: "Projects",
                       ),
                       GButton(
-                        icon: Icons.person,
-                        text: 'About Me',
-                        haptic: true,
-                        semanticLabel: "About Me",
-                      ),
-                      GButton(
                         icon: Icons.mail,
                         text: 'Contact Me',
                         haptic: true,
@@ -179,13 +173,7 @@ class _NavigationWrapperState extends State<NavigationWrapper> {
                         case 2:
                           navigateTo(
                             context,
-                            const ResponstiveAboutme(currentIndex: 2),
-                          );
-                          break;
-                        case 3:
-                          navigateTo(
-                            context,
-                            const ResponsiveContacts(currentIndex: 3),
+                            const ResponsiveContacts(currentIndex: 2),
                           );
                           break;
                       }

@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/functions/Custom_backdrop_filter.dart';
-import 'package:portfolio/functions/GoogleMap_Integration.dart';
 import 'package:portfolio/functions/commanFunction.dart';
 import 'package:portfolio/functions/launch_url.dart';
 import 'package:portfolio/theme/theme.dart';
@@ -39,7 +38,7 @@ class _ContactMe_tablet extends State<ContactMe_tablet> {
             children: [
               GestureDetector(
                 onTap: () {
-                  // urlLaunch("https://maps.app.goo.gl/wXXKmaZZ4ZAK2Zwk8");
+                  urlLaunch("https://maps.app.goo.gl/1LSYBvSG4FQQptSb7");
                 },
                 child: Stack(
                   children: [
@@ -49,24 +48,15 @@ class _ContactMe_tablet extends State<ContactMe_tablet> {
                         borderRadius:
                             ContactMe_containerStyle_tablet.borderRadius,
 
-                        // image: DecorationImage(
-                        //   image: AssetImage('assets/locD.png'),
-                        //   fit: BoxFit.cover,
-                        // ),
+                        image: DecorationImage(
+                          image: AssetImage('assets/nashik.jpeg'),
+                          fit: BoxFit.cover,
+                        ),
                       ),
                       // padding: ContactMe_containerStyle_tablet.padding,
                       margin: ContactMe_containerStyle_tablet.margin,
                       width: ContactMe_containerStyle_tablet.loc_width,
                       height: 250,
-                      child: ClipRRect(
-                        borderRadius:
-                            ContactMe_containerStyle_tablet.borderRadius,
-                        child: const MouseRegion(
-                          cursor: SystemMouseCursors.grab,
-                          child: RandomLocationMap(),
-                        ),
-                      ),
-                      // height: deviceHeight * ContactMe_containerStyle_tablet.loc_height,
                     ),
                     Positioned(
                       bottom: 20,
@@ -416,7 +406,7 @@ class _ContactMe_tablet extends State<ContactMe_tablet> {
                         child: GestureDetector(
                           onTap: () {
                             urlLaunch(
-                              "https://www.hackerrank.com/profile/swarnimjain992",
+                              "https://www.codechef.com/users/swarnim992",
                             );
                           },
                           child: CustomBox(
@@ -436,7 +426,7 @@ class _ContactMe_tablet extends State<ContactMe_tablet> {
                               width:
                                   ContactMe_containerStyle_tablet.githubsizeW,
                               child: SvgPicture.asset(
-                                "assets/svg/hackerrank.svg",
+                                "assets/svg/codechef.svg",
                                 height:
                                     ContactMe_containerStyle_tablet
                                         .svgcontHeight,

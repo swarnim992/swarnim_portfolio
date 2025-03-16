@@ -533,26 +533,6 @@ class TabletBody extends StatelessWidget {
                                       ),
                                     ),
                                   ),
-                                  SizedBox(
-                                    //color: tablet_SVGContainer.color,
-                                    width:
-                                        deviceWidth * tablet_SVGContainer.width,
-                                    //height: deviceWidth * tablet_SVGContainer.height,
-                                    child: Center(
-                                      child: Custom_tooltip(
-                                        message: skills[11].name,
-                                        child: SvgPicture.asset(
-                                          skills[11].svgPath,
-
-                                          // color: textStyles.B.color,
-                                          width:
-                                              deviceWidth *
-                                              tablet_SVGContainer.width,
-                                          // height: devi * tablet_SVGContainer.height,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
                                 ],
                               ),
                             ],

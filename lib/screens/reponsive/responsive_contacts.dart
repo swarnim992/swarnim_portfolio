@@ -6,7 +6,7 @@ import 'package:portfolio/screens/pages/contact_pages/ContactMe_tablet.dart';
 
 class ResponsiveContacts extends StatelessWidget {
   final int currentIndex;
-  const ResponsiveContacts({super.key, this.currentIndex = 3});
+  const ResponsiveContacts({super.key, this.currentIndex = 2});
 
   @override
   Widget build(BuildContext context) {

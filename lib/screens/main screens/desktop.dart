@@ -256,31 +256,31 @@ class _DesktopBodyState extends State<DesktopBody> {
                                     text: TextSpan(
                                       children: [
                                         TextSpan(
-                                          text: "Building the",
-                                          style: GoogleFonts.chakraPetch(
-                                            textStyle: textStyles.B,
-                                          ),
-                                        ),
-                                        TextSpan(
-                                          text: " Future",
+                                          text: "Bridging",
                                           style: GoogleFonts.chakraPetch(
                                             textStyle: textStyles.I,
                                           ),
                                         ),
                                         TextSpan(
-                                          text: ",\nOne Line of ",
+                                          text: " creativity",
                                           style: GoogleFonts.chakraPetch(
                                             textStyle: textStyles.B,
                                           ),
                                         ),
                                         TextSpan(
-                                          text: "Code",
+                                          text: ",\nand ",
                                           style: GoogleFonts.chakraPetch(
                                             textStyle: textStyles.I,
                                           ),
                                         ),
                                         TextSpan(
-                                          text: "\nat a Time",
+                                          text: "technology",
+                                          style: GoogleFonts.chakraPetch(
+                                            textStyle: textStyles.B,
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text: "\nthrough code.",
                                           style: GoogleFonts.chakraPetch(
                                             textStyle: textStyles.B,
                                           ),
@@ -325,15 +325,22 @@ class _DesktopBodyState extends State<DesktopBody> {
                                     text: TextSpan(
                                       children: [
                                         TextSpan(
-                                          text: "\nFlutter",
+                                          text: "\nSoftware Development ",
                                           style: GoogleFonts.chakraPetch(
-                                            textStyle: textStyles.I,
+                                            textStyle: textStyles.B,
                                           ),
                                         ),
                                         TextSpan(
-                                          text: " Developer     ",
+                                          text: " \nEngineer",
                                           style: GoogleFonts.chakraPetch(
                                             textStyle: textStyles.B,
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text: "\nDecimal Point Analytics",
+                                          style: GoogleFonts.chakraPetch(
+                                            textStyle: textStyles.I,
+                                            fontSize: 15,
                                           ),
                                         ),
                                         TextSpan(
@@ -344,21 +351,14 @@ class _DesktopBodyState extends State<DesktopBody> {
                                           ),
                                         ),
                                         TextSpan(
-                                          text: "CSE",
+                                          text: "Computer Engineering",
                                           style: GoogleFonts.chakraPetch(
                                             textStyle: textStyles.I,
                                             fontSize: 20,
                                           ),
                                         ),
                                         TextSpan(
-                                          text: " Student",
-                                          style: GoogleFonts.chakraPetch(
-                                            textStyle: textStyles.B,
-                                            fontSize: 20,
-                                          ),
-                                        ),
-                                        TextSpan(
-                                          text: "\nKerala",
+                                          text: "\nNashik",
                                           style: GoogleFonts.chakraPetch(
                                             textStyle: textStyles.I,
                                             fontSize: kDefaultFontSize,
@@ -385,78 +385,63 @@ class _DesktopBodyState extends State<DesktopBody> {
                     //about me
                     SizedBox(
                       height: 317,
-                      child: GestureDetector(
-                        onTap: () {},
-                        child: MouseRegion(
-                          cursor: SystemMouseCursors.click,
-                          child: CustomBox(
-                            isHover: true,
-                            hoverColor: ResumeColor,
-                            margin: containerStyle.margin,
+                      child: CustomBox(
+                        isHover: false,
+                        hoverColor: ResumeColor,
+                        margin: containerStyle.margin,
+                        borderRadius: containerStyle.borderRadius,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: containerStyle.color,
                             borderRadius: containerStyle.borderRadius,
-                            child: Container(
-                              decoration: BoxDecoration(
-                                color: containerStyle.color,
-                                borderRadius: containerStyle.borderRadius,
-                              ),
-                              padding: containerStyle.padding,
-                              // margin: containerStyle.margin,
-                              width: deviceWidth * containerStyle.width,
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.end,
+                          ),
+                          padding: containerStyle.padding,
+                          // margin: containerStyle.margin,
+                          width: deviceWidth * containerStyle.width,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.end,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Row(
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Expanded(
-                                        child: AutoSizeText.rich(
-                                          maxFontSize: 23,
-                                          minFontSize: 5,
-                                          maxLines: 1,
+                                  Expanded(
+                                    child: AutoSizeText.rich(
+                                      maxFontSize: 23,
+                                      minFontSize: 5,
+                                      maxLines: 1,
+                                      TextSpan(
+                                        children: [
                                           TextSpan(
-                                            children: [
-                                              TextSpan(
-                                                text: 'About ',
-                                                style: GoogleFonts.chakraPetch(
-                                                  textStyle:
-                                                      textStyles.HeadingB,
-                                                ),
-                                              ),
-                                              TextSpan(
-                                                text: 'Me',
-                                                style: GoogleFonts.chakraPetch(
-                                                  textStyle:
-                                                      textStyles.HeadingI,
-                                                ),
-                                              ),
-                                            ],
+                                            text: 'About ',
+                                            style: GoogleFonts.chakraPetch(
+                                              textStyle: textStyles.HeadingB,
+                                            ),
                                           ),
-                                        ),
+                                          TextSpan(
+                                            text: 'Me',
+                                            style: GoogleFonts.chakraPetch(
+                                              textStyle: textStyles.HeadingI,
+                                            ),
+                                          ),
+                                        ],
                                       ),
-                                      Icon(
-                                        color: IconHClr,
-                                        Icons.arrow_outward_rounded,
-                                        size: deviceWidth * 0.014,
-                                      ),
-                                    ],
-                                  ),
-                                  AutoSizeText(
-                                    minFontSize: 10,
-                                    maxFontSize: 15,
-                                    maxLines: 10,
-                                    style: GoogleFonts.chakraPetch(
-                                      textStyle: textStyles.P1,
                                     ),
-                                    "Computer engineer with a strong foundation in problem-solving and software development. Committed to building efficient, reliable solutions and continuously expanding my skills to stay current with evolving technologies.",
                                   ),
                                 ],
                               ),
-                            ),
+                              AutoSizeText(
+                                minFontSize: 10,
+                                maxFontSize: 15,
+                                maxLines: 10,
+                                style: GoogleFonts.chakraPetch(
+                                  textStyle: textStyles.P1,
+                                ),
+                                "Experienced Software Development Engineer specializing in Flutter for Android and iOS. Skilled in building intuitive UIs, optimizing backend systems, and ensuring seamless performance. Passionate about process improvement, collaboration, and delivering high-quality solutions in cross-functional teams.",
+                              ),
+                            ],
                           ),
                         ),
                       ),

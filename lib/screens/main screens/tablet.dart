@@ -22,6 +22,9 @@ class TabletBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    String rurl =
+        'https://github.com/swarnim992/swarnim992/blob/main/Swarnim%20Jain.pdf';
+
     double deviceWidth = MediaQuery.of(context).size.width;
     double deviceHeight = MediaQuery.of(context).size.height;
 
@@ -171,7 +174,7 @@ class TabletBody extends StatelessWidget {
                                 cursor: SystemMouseCursors.click,
                                 child: GestureDetector(
                                   onTap: () {
-                                    // downloadResume(rurl);
+                                    downloadResume(rurl);
                                     notifySnackBar(
                                       context,
                                       "Preparing my resume... it will download shortly.",
@@ -733,7 +736,7 @@ class TabletBody extends StatelessWidget {
                             ),
                           ),
                         ),
-                        SizedBox(height: 7,)
+                        SizedBox(height: 7),
                         //prev_next
                         // Padding(
                         //   padding: const EdgeInsets.only(right: 5, bottom: 3),
@@ -890,8 +893,7 @@ class TabletBody extends StatelessWidget {
                                     decoration: BoxDecoration(
                                       color: EducationcontainerStyle.color,
                                       borderRadius:
-                                          EducationcontainerStyle
-                                              .borderRadius,
+                                          EducationcontainerStyle.borderRadius,
                                     ),
                                     child: Column(
                                       mainAxisAlignment:
@@ -914,20 +916,16 @@ class TabletBody extends StatelessWidget {
                                             children: [
                                               Text(
                                                 Educations[index].startTime,
-                                                style:
-                                                    GoogleFonts.chakraPetch(
-                                                      textStyle:
-                                                          textStyles.edu_P_L,
-                                                    ),
+                                                style: GoogleFonts.chakraPetch(
+                                                  textStyle: textStyles.edu_P_L,
+                                                ),
                                               ),
                                               const Text(" - "),
                                               Text(
                                                 Educations[index].endTime,
-                                                style:
-                                                    GoogleFonts.chakraPetch(
-                                                      textStyle:
-                                                          textStyles.edu_P_L,
-                                                    ),
+                                                style: GoogleFonts.chakraPetch(
+                                                  textStyle: textStyles.edu_P_L,
+                                                ),
                                               ),
                                             ],
                                           ),
@@ -938,11 +936,9 @@ class TabletBody extends StatelessWidget {
                                               child: Text(
                                                 Educations[index].department
                                                     .replaceAll('\n', ''),
-                                                style:
-                                                    GoogleFonts.chakraPetch(
-                                                      textStyle:
-                                                          textStyles.edu_P_N,
-                                                    ),
+                                                style: GoogleFonts.chakraPetch(
+                                                  textStyle: textStyles.edu_P_N,
+                                                ),
                                               ),
                                             )
                                             : const Offstage(),
@@ -951,11 +947,9 @@ class TabletBody extends StatelessWidget {
                                               fit: BoxFit.scaleDown,
                                               child: Text(
                                                 Educations[index].grade,
-                                                style:
-                                                    GoogleFonts.chakraPetch(
-                                                      textStyle:
-                                                          textStyles.edu_P_N,
-                                                    ),
+                                                style: GoogleFonts.chakraPetch(
+                                                  textStyle: textStyles.edu_P_N,
+                                                ),
                                               ),
                                             )
                                             : const Offstage(),
@@ -1126,8 +1120,7 @@ class TabletBody extends StatelessWidget {
                                   endChild: Padding(
                                     padding: const EdgeInsets.only(top: 5),
                                     child: Container(
-                                      padding:
-                                          EducationcontainerStyle.padding,
+                                      padding: EducationcontainerStyle.padding,
                                       margin: EducationcontainerStyle.margin,
                                       decoration: BoxDecoration(
                                         color: EducationcontainerStyle.color,
@@ -1162,13 +1155,11 @@ class TabletBody extends StatelessWidget {
                                                   CrossAxisAlignment.start,
                                               children: [
                                                 Text(
-                                                  Experiences[index]
-                                                      .startTime,
+                                                  Experiences[index].startTime,
                                                   style:
                                                       GoogleFonts.chakraPetch(
                                                         textStyle:
-                                                            textStyles
-                                                                .edu_P_L,
+                                                            textStyles.edu_P_L,
                                                       ),
                                                 ),
                                                 Text(
@@ -1176,8 +1167,7 @@ class TabletBody extends StatelessWidget {
                                                   style:
                                                       GoogleFonts.chakraPetch(
                                                         textStyle:
-                                                            textStyles
-                                                                .edu_P_L,
+                                                            textStyles.edu_P_L,
                                                       ),
                                                 ),
                                                 Text(
@@ -1185,8 +1175,7 @@ class TabletBody extends StatelessWidget {
                                                   style:
                                                       GoogleFonts.chakraPetch(
                                                         textStyle:
-                                                            textStyles
-                                                                .edu_P_L,
+                                                            textStyles.edu_P_L,
                                                       ),
                                                 ),
                                                 Text(
@@ -1194,8 +1183,7 @@ class TabletBody extends StatelessWidget {
                                                   style:
                                                       GoogleFonts.chakraPetch(
                                                         textStyle:
-                                                            textStyles
-                                                                .edu_P_L,
+                                                            textStyles.edu_P_L,
                                                       ),
                                                 ),
                                                 Text(
@@ -1203,8 +1191,7 @@ class TabletBody extends StatelessWidget {
                                                   style:
                                                       GoogleFonts.chakraPetch(
                                                         textStyle:
-                                                            textStyles
-                                                                .edu_P_L,
+                                                            textStyles.edu_P_L,
                                                       ),
                                                 ),
                                               ],

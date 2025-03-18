@@ -7,6 +7,7 @@ import 'package:portfolio/data/experience.dart';
 import 'package:portfolio/data/project.dart';
 import 'package:portfolio/data/skills.dart';
 import 'package:portfolio/functions/Custom_backdrop_filter.dart';
+import 'package:portfolio/functions/commanFunction.dart';
 import 'package:portfolio/functions/custom_tooltip.dart';
 import 'package:portfolio/functions/hover%20effect.dart';
 import 'package:portfolio/functions/notifySnackBar.dart';
@@ -24,6 +25,9 @@ class DesktopBody extends StatefulWidget {
 }
 
 class _DesktopBodyState extends State<DesktopBody> {
+  String rurl =
+      'https://github.com/swarnim992/swarnim992/blob/main/Swarnim%20Jain.pdf';
+
   @override
   Widget build(BuildContext context) {
     double isdeviceWidth = MediaQuery.of(context).size.width;
@@ -452,7 +456,7 @@ class _DesktopBodyState extends State<DesktopBody> {
                       height: 112.3,
                       child: GestureDetector(
                         onTap: () {
-                          // downloadResume(rurl);
+                          downloadResume(rurl);
                           notifySnackBar(
                             context,
                             "My Resume Will Be Downloaded Shortly",
@@ -905,8 +909,7 @@ class _DesktopBodyState extends State<DesktopBody> {
                                                   style:
                                                       GoogleFonts.chakraPetch(
                                                         textStyle:
-                                                            textStyles
-                                                                .edu_H_B,
+                                                            textStyles.edu_H_B,
                                                       ),
                                                 ),
                                               ),
@@ -955,15 +958,16 @@ class _DesktopBodyState extends State<DesktopBody> {
                                                     Text(
                                                       Experiences[index]
                                                           .duration,
-                                                      style: GoogleFonts.chakraPetch(
-                                                        textStyle: textStyles
-                                                            .edu_P_L
-                                                            .copyWith(
-                                                              fontWeight:
-                                                                  FontWeight
-                                                                      .bold,
-                                                            ),
-                                                      ),
+                                                      style:
+                                                          GoogleFonts.chakraPetch(
+                                                            textStyle: textStyles
+                                                                .edu_P_L
+                                                                .copyWith(
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .bold,
+                                                                ),
+                                                          ),
                                                     ),
                                                   ],
                                                 ),
@@ -977,8 +981,7 @@ class _DesktopBodyState extends State<DesktopBody> {
                                                   style:
                                                       GoogleFonts.chakraPetch(
                                                         textStyle:
-                                                            textStyles
-                                                                .edu_P_N,
+                                                            textStyles.edu_P_N,
                                                       ),
                                                 ),
                                               ),
@@ -1104,8 +1107,7 @@ class _DesktopBodyState extends State<DesktopBody> {
                                                   style:
                                                       GoogleFonts.chakraPetch(
                                                         textStyle:
-                                                            textStyles
-                                                                .edu_H_B,
+                                                            textStyles.edu_H_B,
                                                       ),
                                                 ),
                                               ),
@@ -1125,8 +1127,7 @@ class _DesktopBodyState extends State<DesktopBody> {
                                                     ),
                                                     const Text(" - "),
                                                     Text(
-                                                      Educations[index]
-                                                          .endTime,
+                                                      Educations[index].endTime,
                                                       style:
                                                           GoogleFonts.chakraPetch(
                                                             textStyle:
@@ -1137,22 +1138,22 @@ class _DesktopBodyState extends State<DesktopBody> {
                                                   ],
                                                 ),
                                               ),
-                                              Educations[index].department !=
-                                                      ''
+                                              Educations[index].department != ''
                                                   ? FittedBox(
                                                     fit: BoxFit.scaleDown,
                                                     child: Text(
                                                       Educations[index]
                                                           .department,
-                                                      style: GoogleFonts.chakraPetch(
-                                                        textStyle: textStyles
-                                                            .edu_P_N
-                                                            .copyWith(
-                                                              fontWeight:
-                                                                  FontWeight
-                                                                      .w500,
-                                                            ),
-                                                      ),
+                                                      style:
+                                                          GoogleFonts.chakraPetch(
+                                                            textStyle: textStyles
+                                                                .edu_P_N
+                                                                .copyWith(
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .w500,
+                                                                ),
+                                                          ),
                                                     ),
                                                   )
                                                   : const Offstage(),

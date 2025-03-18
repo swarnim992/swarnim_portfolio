@@ -7,6 +7,7 @@ import 'package:portfolio/data/experience.dart';
 import 'package:portfolio/data/project.dart';
 import 'package:portfolio/data/skills.dart';
 import 'package:portfolio/functions/Custom_backdrop_filter.dart';
+import 'package:portfolio/functions/commanFunction.dart';
 import 'package:portfolio/functions/custom_tooltip.dart';
 import 'package:portfolio/functions/notifySnackBar.dart';
 import 'package:portfolio/screens/reponsive/responsive_contacts.dart';
@@ -23,6 +24,9 @@ class MobileBody extends StatefulWidget {
 }
 
 class _MobileBodyState extends State<MobileBody> {
+  String rurl =
+      'https://github.com/swarnim992/swarnim992/blob/main/Swarnim%20Jain.pdf';
+
   @override
   Widget build(BuildContext context) {
     double deviceWidth = MediaQuery.of(context).size.width;
@@ -140,7 +144,7 @@ class _MobileBodyState extends State<MobileBody> {
 
                           GestureDetector(
                             onTap: () {
-                              // downloadResume(rurl);
+                              downloadResume(rurl);
                               notifySnackBar(
                                 context,
                                 "Preparing my resume... it will download shortly.",

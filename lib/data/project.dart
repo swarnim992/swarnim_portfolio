@@ -3,7 +3,7 @@ import 'package:portfolio/models/models.dart';
 
 List<Project> projects = [
   Project(
-    image: "",
+    image: "assets/project/quotestream.png",
     title: "Quotestream Mobile",
     description:
         "Quotestream Mobile is a feature-rich stock market app built with Flutter, providing real-time financial data, portfolio management, and market insights on the go.",
@@ -20,7 +20,7 @@ List<Project> projects = [
   ),
 
   Project(
-    image: "",
+    image: "assets/project/gully.png",
     title: "Gully Cricket",
     description:
         "Gully Cricket App is a lightweight and user-friendly cricket scoring application that helps track scores and set targets effortlessly.",
@@ -36,7 +36,7 @@ List<Project> projects = [
   ),
 
   Project(
-    image: "",
+    image: "assets/project/trinity.png",
     title: "Trinity",
     description:
         "Trinity is a SilverStripe CMS-based website that I worked on for ensuring smooth performance, updates, and issue resolution.",
@@ -52,7 +52,7 @@ List<Project> projects = [
   ),
 
   Project(
-    image: "",
+    image: "assets/project/automation.png",
     title: "Automation Alert",
     description:
         "Automation Script Making is a Python-based project that automates data extraction, processing, and alerting by gathering information from various websites and notifying users of relevant matches.",
@@ -68,7 +68,23 @@ List<Project> projects = [
   ),
 
   Project(
-    image: "",
+    image: "assets/project/portfolio.png",
+    title: "Portfolio Website",
+    description:
+        "A personal portfolio website to showcase projects, skills, and experience. Made the website fully responsive across all platforms.",
+    icon: Icons.web_rounded,
+    flutterSvg: "assets/svg/flutter.svg",
+    dartSvg: "assets/svg/dart.svg",
+    keyFeatures:
+        "• Responsive design.\n• Contact page.\n• Download PDF feature.\n• Smooth UI & Animations.",
+    githubLink: "https://github.com/swarnim992/swarnim_portfolio",
+    demoVideoLink: "https://swarnimjain.netlify.app/",
+    screenshot1: "",
+    screenshot2: "",
+  ),
+
+  Project(
+    image: "assets/project/marble.png",
     title: "Moving Marble Game",
     description:
         "Moving Marble Game is a strategic and engaging 4x4 grid-based game where players place and shift marbles to align four in a row and win.",
@@ -84,7 +100,7 @@ List<Project> projects = [
   ),
 
   Project(
-    image: "",
+    image: "assets/project/instastory.png",
     title: "Insta Story App",
     description:
         "Insta Story App is a high-performance Flutter application replicating Instagram's story feature with a seamless and smooth user experience.",
@@ -95,22 +111,6 @@ List<Project> projects = [
         "• Built with efficient Flutter code for smooth transitions and animations.\n• State Management with GetX.\n• User-Friendly UI.\n• Interact with stories just like Instagram.",
     githubLink: "https://github.com/swarnim992/instaStoryApp",
     demoVideoLink: "https://instastorylite.netlify.app/",
-    screenshot1: "",
-    screenshot2: "",
-  ),
-
-  Project(
-    image: "",
-    title: "Portfolio Website",
-    description:
-        "A personal portfolio website to showcase projects, skills, and experience. Made the website fully responsive across all platforms.",
-    icon: Icons.web_rounded,
-    flutterSvg: "assets/svg/flutter.svg",
-    dartSvg: "assets/svg/dart.svg",
-    keyFeatures:
-        "• Responsive design.\n• Contact page.\n• Download PDF feature.\n• Smooth UI & Animations.",
-    githubLink: "https://github.com/swarnim992/swarnim_portfolio",
-    demoVideoLink: "",
     screenshot1: "",
     screenshot2: "",
   ),

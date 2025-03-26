@@ -2,10 +2,10 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio/data/project.dart';
-import 'package:portfolio/functions/Custom_backdrop_filter.dart';
-import 'package:portfolio/functions/demo_code_btn_widget.dart';
-import 'package:portfolio/theme/theme.dart';
+import 'package:Swarnim_Jain/data/project.dart';
+import 'package:Swarnim_Jain/functions/Custom_backdrop_filter.dart';
+import 'package:Swarnim_Jain/functions/demo_code_btn_widget.dart';
+import 'package:Swarnim_Jain/theme/theme.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
 class myProject_tablet extends StatefulWidget {
@@ -61,21 +61,29 @@ class _myProject_tabletState extends State<myProject_tablet> {
                             children: [
                               if (index * 2 < projects.length)
                                 Padding(
-                                  padding:
-                                      const EdgeInsets.only(right: 8, top: 8),
-                                  child:
-                                      buildProjectCard(index * 2, deviceWidth),
+                                  padding: const EdgeInsets.only(
+                                    right: 8,
+                                    top: 8,
+                                  ),
+                                  child: buildProjectCard(
+                                    index * 2,
+                                    deviceWidth,
+                                  ),
                                 ),
                               if (index * 2 + 1 < projects.length)
                                 Padding(
-                                  padding:
-                                      const EdgeInsets.only(left: 8, top: 8),
+                                  padding: const EdgeInsets.only(
+                                    left: 8,
+                                    top: 8,
+                                  ),
                                   child: buildProjectCard(
-                                      index * 2 + 1, deviceWidth),
+                                    index * 2 + 1,
+                                    deviceWidth,
+                                  ),
                                 ),
                             ],
                           ),
-                          if (isLastItem) const SizedBox(height: 100)
+                          if (isLastItem) const SizedBox(height: 100),
                         ],
                       );
                     },
@@ -127,22 +135,23 @@ class _myProject_tabletState extends State<myProject_tablet> {
                   width: (deviceWidth / 2.179) - 39.5,
                   decoration: const BoxDecoration(
                     borderRadius: BorderRadius.only(
-                        bottomLeft: Radius.circular(10),
-                        bottomRight: Radius.circular(10)),
+                      bottomLeft: Radius.circular(10),
+                      bottomRight: Radius.circular(10),
+                    ),
                     gradient: LinearGradient(
                       colors: [
                         Color.fromARGB(0, 0, 0, 0),
                         Color.fromARGB(99, 0, 0, 0),
                         Color.fromARGB(199, 0, 0, 0),
                         Color.fromARGB(230, 0, 0, 0),
-                        Color.fromARGB(255, 0, 0, 0)
+                        Color.fromARGB(255, 0, 0, 0),
                       ],
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
                     ),
                   ),
                   child: demo_code_button(index: index),
-                )
+                ),
               ],
             ),
           ],
@@ -154,7 +163,9 @@ class _myProject_tabletState extends State<myProject_tablet> {
             height: 170,
             width: deviceWidth / 2.179,
             decoration: BoxDecoration(
-                color: mobile_ProjectContainer.color, borderRadius: RadBottom),
+              color: mobile_ProjectContainer.color,
+              borderRadius: RadBottom,
+            ),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -165,7 +176,8 @@ class _myProject_tabletState extends State<myProject_tablet> {
                     child: AutoSizeText(
                       projects[index].title,
                       style: GoogleFonts.chakraPetch(
-                          textStyle: textStyles.projectTitle),
+                        textStyle: textStyles.projectTitle,
+                      ),
                       minFontSize: 10,
                       maxFontSize: 25,
                       maxLines: 1,
@@ -178,7 +190,8 @@ class _myProject_tabletState extends State<myProject_tablet> {
                     child: AutoSizeText(
                       projects[index].description,
                       style: GoogleFonts.chakraPetch(
-                          textStyle: textStyles.descriptions),
+                        textStyle: textStyles.descriptions,
+                      ),
                       minFontSize: 5,
                       maxFontSize: 15,
                       maxLines: 3,
@@ -187,7 +200,11 @@ class _myProject_tabletState extends State<myProject_tablet> {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(
-                      left: 16, right: 8, top: 10, bottom: 10),
+                    left: 16,
+                    right: 8,
+                    top: 10,
+                    bottom: 10,
+                  ),
                   child: SizedBox(
                     width: 200,
                     child: Row(
@@ -196,19 +213,14 @@ class _myProject_tabletState extends State<myProject_tablet> {
                         AutoSizeText(
                           "Tech Stack :",
                           style: GoogleFonts.chakraPetch(
-                              textStyle: textStyles.Dheadings),
+                            textStyle: textStyles.Dheadings,
+                          ),
                           minFontSize: 10,
                           maxFontSize: 18,
                           maxLines: 1,
                         ),
-                        SvgPicture.asset(
-                          projects[index].dartSvg,
-                          width: 25,
-                        ),
-                        SvgPicture.asset(
-                          projects[index].flutterSvg,
-                          width: 25,
-                        ),
+                        SvgPicture.asset(projects[index].dartSvg, width: 25),
+                        SvgPicture.asset(projects[index].flutterSvg, width: 25),
                       ],
                     ),
                   ),

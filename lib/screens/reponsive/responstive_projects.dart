@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/functions/navigation_bar.dart';
-import 'package:portfolio/functions/responsive_layout.dart';
-import 'package:portfolio/screens/pages/project_pages/myProject_mobile.dart';
-import 'package:portfolio/screens/pages/project_pages/myProject_tablet.dart';
-import 'package:portfolio/screens/pages/project_pages/my_projects.dart';
+import 'package:Swarnim_Jain/functions/navigation_bar.dart';
+import 'package:Swarnim_Jain/functions/responsive_layout.dart';
+import 'package:Swarnim_Jain/screens/pages/project_pages/myProject_mobile.dart';
+import 'package:Swarnim_Jain/screens/pages/project_pages/myProject_tablet.dart';
+import 'package:Swarnim_Jain/screens/pages/project_pages/my_projects.dart';
 
 class ResponstiveProjects extends StatelessWidget {
   final int currentIndex;

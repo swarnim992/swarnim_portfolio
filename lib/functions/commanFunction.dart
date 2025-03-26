@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'dart:html';
 import 'dart:typed_data';
 import 'package:http/http.dart' as http;
-import 'package:portfolio/functions/notifySnackBar.dart';
+import 'package:Swarnim_Jain/functions/notifySnackBar.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 void openEmail() async {
@@ -76,4 +76,3 @@ Future<void> downloadResume(String url) async {
     );
   }
 }
-

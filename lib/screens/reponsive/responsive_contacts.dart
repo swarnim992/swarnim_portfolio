@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/functions/navigation_bar.dart';
-import 'package:portfolio/functions/responsive_layout.dart';
-import 'package:portfolio/screens/pages/contact_pages/ContactMe_mobile.dart';
-import 'package:portfolio/screens/pages/contact_pages/ContactMe_tablet.dart';
+import 'package:Swarnim_Jain/functions/navigation_bar.dart';
+import 'package:Swarnim_Jain/functions/responsive_layout.dart';
+import 'package:Swarnim_Jain/screens/pages/contact_pages/ContactMe_mobile.dart';
+import 'package:Swarnim_Jain/screens/pages/contact_pages/ContactMe_tablet.dart';
 
 class ResponsiveContacts extends StatelessWidget {
   final int currentIndex;
@@ -10,7 +10,6 @@ class ResponsiveContacts extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       body: NavigationWrapper(
         currentIndex: currentIndex,

@@ -1,9 +1,9 @@
 import 'package:animated_gradient/animated_gradient.dart';
 import 'package:flutter/material.dart';
-import 'package:portfolio/functions/navigation_bar.dart';
-import 'package:portfolio/screens/main%20screens/desktop.dart';
-import 'package:portfolio/screens/main%20screens/mobile.dart';
-import 'package:portfolio/screens/main%20screens/tablet.dart';
+import 'package:Swarnim_Jain/functions/navigation_bar.dart';
+import 'package:Swarnim_Jain/screens/main%20screens/desktop.dart';
+import 'package:Swarnim_Jain/screens/main%20screens/mobile.dart';
+import 'package:Swarnim_Jain/screens/main%20screens/tablet.dart';
 
 class HomeScreen extends StatefulWidget {
   final int currentIndex;
@@ -19,11 +19,11 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       body: AnimatedGradient(
         colors: [Colors.black, const Color.fromARGB(255, 2, 25, 59)],
-        child: Center(  
+        child: Center(
           child: NavigationWrapper(
             showNavBar: false,
             currentIndex: widget.currentIndex,
-            child: LayoutBuilder( 
+            child: LayoutBuilder(
               builder: (context, constrains) {
                 if (constrains.maxWidth < 600) {
                   return MobileBody();

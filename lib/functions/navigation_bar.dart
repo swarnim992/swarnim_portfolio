@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
-import 'package:portfolio/screens/Home.dart';
-import 'package:portfolio/screens/reponsive/responsive_contacts.dart';
-import 'package:portfolio/screens/reponsive/responstive_aboutme.dart';
-import 'package:portfolio/screens/reponsive/responstive_projects.dart';
-import 'package:portfolio/screens/widgets/navigate.dart';
-import 'package:portfolio/theme/theme.dart';
+import 'package:Swarnim_Jain/screens/Home.dart';
+import 'package:Swarnim_Jain/screens/reponsive/responsive_contacts.dart';
+import 'package:Swarnim_Jain/screens/reponsive/responstive_aboutme.dart';
+import 'package:Swarnim_Jain/screens/reponsive/responstive_projects.dart';
+import 'package:Swarnim_Jain/screens/widgets/navigate.dart';
+import 'package:Swarnim_Jain/theme/theme.dart';
 
 class NavigationWrapper extends StatefulWidget {
   final Widget child;

@@ -2,18 +2,18 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio/data/educatiton.dart';
-import 'package:portfolio/data/experience.dart';
-import 'package:portfolio/data/project.dart';
-import 'package:portfolio/data/skills.dart';
-import 'package:portfolio/functions/Custom_backdrop_filter.dart';
-import 'package:portfolio/functions/commanFunction.dart';
-import 'package:portfolio/functions/custom_tooltip.dart';
-import 'package:portfolio/functions/notifySnackBar.dart';
-import 'package:portfolio/screens/reponsive/responsive_contacts.dart';
-import 'package:portfolio/screens/reponsive/responstive_projects.dart';
-import 'package:portfolio/screens/widgets/navigate.dart';
-import 'package:portfolio/theme/theme.dart';
+import 'package:Swarnim_Jain/data/educatiton.dart';
+import 'package:Swarnim_Jain/data/experience.dart';
+import 'package:Swarnim_Jain/data/project.dart';
+import 'package:Swarnim_Jain/data/skills.dart';
+import 'package:Swarnim_Jain/functions/Custom_backdrop_filter.dart';
+import 'package:Swarnim_Jain/functions/commanFunction.dart';
+import 'package:Swarnim_Jain/functions/custom_tooltip.dart';
+import 'package:Swarnim_Jain/functions/notifySnackBar.dart';
+import 'package:Swarnim_Jain/screens/reponsive/responsive_contacts.dart';
+import 'package:Swarnim_Jain/screens/reponsive/responstive_projects.dart';
+import 'package:Swarnim_Jain/screens/widgets/navigate.dart';
+import 'package:Swarnim_Jain/theme/theme.dart';
 import 'package:timeline_tile/timeline_tile.dart';
 
 class MobileBody extends StatefulWidget {
@@ -55,15 +55,15 @@ class _MobileBodyState extends State<MobileBody> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
-                    Expanded(
-                      child: Image.asset(
-                        'assets/pfp2.png',
-                        fit: BoxFit.fitHeight,
-                        alignment: Alignment.bottomCenter,
-                        // scale: 3.0, // scale the image by a factor of 2
-                      ),
-                    ),
-                    SizedBox(width: deviceWidth * 0.02),
+                    // Expanded(
+                    //   child: Image.asset(
+                    //     'assets/swarnim.png',
+                    //     fit: BoxFit.cover,
+                    //     alignment: Alignment.center,
+                    //     // scale: 3.0, // scale the image by a factor of 2
+                    //   ),
+                    // ),
+                    // SizedBox(width: deviceWidth * 0.02),
                     Expanded(
                       flex: 2,
                       child: Column(
@@ -85,7 +85,7 @@ class _MobileBodyState extends State<MobileBody> {
                                       "Swarnim Jain",
                                       style: GoogleFonts.chakraPetch(
                                         textStyle: textStyles.Name1,
-                                        fontSize: 20,
+                                        fontSize: 24,
                                       ),
                                     ),
                                   ),

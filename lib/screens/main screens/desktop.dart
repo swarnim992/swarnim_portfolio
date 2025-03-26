@@ -1,20 +1,20 @@
+import 'package:Swarnim_Jain/data/educatiton.dart';
+import 'package:Swarnim_Jain/data/experience.dart';
+import 'package:Swarnim_Jain/data/project.dart';
+import 'package:Swarnim_Jain/data/skills.dart';
+import 'package:Swarnim_Jain/functions/Custom_backdrop_filter.dart';
+import 'package:Swarnim_Jain/functions/commanFunction.dart';
+import 'package:Swarnim_Jain/functions/custom_tooltip.dart';
+import 'package:Swarnim_Jain/functions/hover%20effect.dart';
+import 'package:Swarnim_Jain/functions/notifySnackBar.dart';
+import 'package:Swarnim_Jain/screens/reponsive/responsive_contacts.dart';
+import 'package:Swarnim_Jain/screens/reponsive/responstive_projects.dart';
+import 'package:Swarnim_Jain/screens/widgets/navigate.dart';
+import 'package:Swarnim_Jain/theme/theme.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio/data/educatiton.dart';
-import 'package:portfolio/data/experience.dart';
-import 'package:portfolio/data/project.dart';
-import 'package:portfolio/data/skills.dart';
-import 'package:portfolio/functions/Custom_backdrop_filter.dart';
-import 'package:portfolio/functions/commanFunction.dart';
-import 'package:portfolio/functions/custom_tooltip.dart';
-import 'package:portfolio/functions/hover%20effect.dart';
-import 'package:portfolio/functions/notifySnackBar.dart';
-import 'package:portfolio/screens/reponsive/responsive_contacts.dart';
-import 'package:portfolio/screens/reponsive/responstive_projects.dart';
-import 'package:portfolio/screens/widgets/navigate.dart';
-import 'package:portfolio/theme/theme.dart';
 import 'package:timeline_tile/timeline_tile.dart';
 
 class DesktopBody extends StatefulWidget {
@@ -103,8 +103,8 @@ class _DesktopBodyState extends State<DesktopBody> {
                               color: containerStyle.color,
                               borderRadius: containerStyle.borderRadius,
                               image: const DecorationImage(
-                                image: AssetImage('assets/pfp2.png'),
-                                fit: BoxFit.fitHeight,
+                                image: AssetImage('assets/swarnim.png'),
+                                fit: BoxFit.scaleDown,
                               ),
                             ),
                             padding: containerStyle.padding,

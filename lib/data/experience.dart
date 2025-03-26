@@ -1,4 +1,4 @@
-import 'package:portfolio/models/models.dart';
+import 'package:Swarnim_Jain/models/models.dart';
 
 List<Experience> Experiences = [
   Experience(

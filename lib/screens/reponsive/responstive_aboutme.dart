@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/functions/navigation_bar.dart';
-import 'package:portfolio/functions/responsive_layout.dart';
+import 'package:Swarnim_Jain/functions/navigation_bar.dart';
+import 'package:Swarnim_Jain/functions/responsive_layout.dart';
 
 class ResponstiveAboutme extends StatelessWidget {
   final int currentIndex;
@@ -8,7 +8,6 @@ class ResponstiveAboutme extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       body: NavigationWrapper(
         currentIndex: currentIndex,

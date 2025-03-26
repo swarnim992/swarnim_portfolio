@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/models/models.dart';
+import 'package:Swarnim_Jain/models/models.dart';
 
 List<Project> projects = [
   Project(

@@ -1,4 +1,4 @@
-import 'package:portfolio/models/models.dart';
+import 'package:Swarnim_Jain/models/models.dart';
 
 final List<Skill> skills = [
   Skill(svgPath: 'assets/svg/flutter.svg', name: 'Flutter'),

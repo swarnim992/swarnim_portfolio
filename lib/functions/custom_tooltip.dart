@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/theme/theme.dart';
+import 'package:Swarnim_Jain/theme/theme.dart';
 
 class Custom_tooltip extends StatelessWidget {
   const Custom_tooltip({super.key, required this.message, required this.child});

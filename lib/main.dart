@@ -1,5 +1,5 @@
+import 'package:Swarnim_Jain/screens/Home.dart';
 import 'package:flutter/material.dart';
-import 'package:portfolio/screens/Home.dart';
 
 void main() {
   runApp(const MyApp());

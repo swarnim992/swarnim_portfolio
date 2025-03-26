@@ -1,12 +1,11 @@
-
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio/data/project.dart';
-import 'package:portfolio/functions/Custom_backdrop_filter.dart';
-import 'package:portfolio/functions/demo_code_btn_widget.dart';
-import 'package:portfolio/theme/theme.dart';
+import 'package:Swarnim_Jain/data/project.dart';
+import 'package:Swarnim_Jain/functions/Custom_backdrop_filter.dart';
+import 'package:Swarnim_Jain/functions/demo_code_btn_widget.dart';
+import 'package:Swarnim_Jain/theme/theme.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
 class myProject_mobile extends StatefulWidget {
@@ -84,10 +83,12 @@ class _myProject_mobileState extends State<myProject_mobile> {
                                     margin: const EdgeInsets.only(top: 10),
                                     decoration: BoxDecoration(
                                       borderRadius: const BorderRadius.all(
-                                          Radius.circular(10)),
+                                        Radius.circular(10),
+                                      ),
                                       image: DecorationImage(
-                                        image:
-                                            AssetImage(projects[index].image),
+                                        image: AssetImage(
+                                          projects[index].image,
+                                        ),
                                         fit: BoxFit.cover,
                                       ),
                                       boxShadow: [GlobalShadow],
@@ -97,22 +98,23 @@ class _myProject_mobileState extends State<myProject_mobile> {
                                     width: deviceWidth - (40 + 16 + 16),
                                     decoration: const BoxDecoration(
                                       borderRadius: BorderRadius.only(
-                                          bottomLeft: Radius.circular(10),
-                                          bottomRight: Radius.circular(10)),
+                                        bottomLeft: Radius.circular(10),
+                                        bottomRight: Radius.circular(10),
+                                      ),
                                       gradient: LinearGradient(
                                         colors: [
                                           Color.fromARGB(0, 0, 0, 0),
                                           Color.fromARGB(99, 0, 0, 0),
                                           Color.fromARGB(199, 0, 0, 0),
                                           Color.fromARGB(230, 0, 0, 0),
-                                          Color.fromARGB(255, 0, 0, 0)
+                                          Color.fromARGB(255, 0, 0, 0),
                                         ],
                                         begin: Alignment.topCenter,
                                         end: Alignment.bottomCenter,
                                       ),
                                     ),
                                     child: demo_code_button(index: index),
-                                  )
+                                  ),
                                 ],
                               ),
                             ],
@@ -134,12 +136,16 @@ class _myProject_mobileState extends State<myProject_mobile> {
                                   //title
                                   Padding(
                                     padding: const EdgeInsets.only(
-                                        left: 16, right: 16, top: 5),
+                                      left: 16,
+                                      right: 16,
+                                      top: 5,
+                                    ),
                                     child: SizedBox(
                                       child: AutoSizeText(
                                         projects[index].title,
                                         style: GoogleFonts.chakraPetch(
-                                            textStyle: textStyles.projectTitle),
+                                          textStyle: textStyles.projectTitle,
+                                        ),
                                         minFontSize: 10,
                                         maxFontSize: 25,
                                         maxLines: 1,
@@ -149,12 +155,16 @@ class _myProject_mobileState extends State<myProject_mobile> {
                                   //description
                                   Padding(
                                     padding: const EdgeInsets.only(
-                                        left: 16, right: 16, top: 10),
+                                      left: 16,
+                                      right: 16,
+                                      top: 10,
+                                    ),
                                     child: SizedBox(
                                       child: AutoSizeText(
                                         projects[index].description,
                                         style: GoogleFonts.chakraPetch(
-                                            textStyle: textStyles.descriptions),
+                                          textStyle: textStyles.descriptions,
+                                        ),
                                         minFontSize: 5,
                                         maxFontSize: 15,
                                         maxLines: 3,
@@ -164,10 +174,11 @@ class _myProject_mobileState extends State<myProject_mobile> {
                                   //techstack
                                   Padding(
                                     padding: const EdgeInsets.only(
-                                        left: 16,
-                                        right: 16,
-                                        top: 10,
-                                        bottom: 16),
+                                      left: 16,
+                                      right: 16,
+                                      top: 10,
+                                      bottom: 16,
+                                    ),
                                     child: SizedBox(
                                       width: 200,
                                       child: Row(
@@ -177,8 +188,8 @@ class _myProject_mobileState extends State<myProject_mobile> {
                                           AutoSizeText(
                                             "Tech Stack :",
                                             style: GoogleFonts.chakraPetch(
-                                                textStyle:
-                                                    textStyles.Dheadings),
+                                              textStyle: textStyles.Dheadings,
+                                            ),
                                             minFontSize: 10,
                                             maxFontSize: 18,
                                             maxLines: 1,
@@ -201,7 +212,7 @@ class _myProject_mobileState extends State<myProject_mobile> {
                               ),
                             ),
                           ),
-                          if (isLastItem) const SizedBox(height: 100)
+                          if (isLastItem) const SizedBox(height: 100),
                         ],
                       );
                     },

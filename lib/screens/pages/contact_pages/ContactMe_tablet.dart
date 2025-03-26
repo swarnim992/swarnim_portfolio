@@ -4,10 +4,10 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio/functions/Custom_backdrop_filter.dart';
-import 'package:portfolio/functions/commanFunction.dart';
-import 'package:portfolio/functions/launch_url.dart';
-import 'package:portfolio/theme/theme.dart';
+import 'package:Swarnim_Jain/functions/Custom_backdrop_filter.dart';
+import 'package:Swarnim_Jain/functions/commanFunction.dart';
+import 'package:Swarnim_Jain/functions/launch_url.dart';
+import 'package:Swarnim_Jain/theme/theme.dart';
 
 class ContactMe_tablet extends StatefulWidget {
   const ContactMe_tablet({super.key});

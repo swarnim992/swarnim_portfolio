@@ -730,13 +730,13 @@ class _DesktopBodyState extends State<DesktopBody> {
                                       TextSpan(
                                         children: [
                                           TextSpan(
-                                            text: 'Tech I',
+                                            text: 'My',
                                             style: GoogleFonts.chakraPetch(
                                               textStyle: textStyles.HeadingI,
                                             ),
                                           ),
                                           TextSpan(
-                                            text: ' Love',
+                                            text: ' Skills',
                                             style: GoogleFonts.chakraPetch(
                                               textStyle: textStyles.HeadingB,
                                             ),

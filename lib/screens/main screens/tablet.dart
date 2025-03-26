@@ -229,14 +229,6 @@ class TabletBody extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              // //about
-                              // AutoSizeText(
-                              //   minFontSize: 5,
-                              //   maxFontSize: 12,
-                              //   maxLines: 10,
-                              //   style: GoogleFonts.chakraPetch(textStyle: textStyles.P1_mobile),
-                              //   "Solving complex problems as an engineering student with a love for tech and learning.",
-                              // ),
                             ],
                           ),
                         ),
@@ -277,13 +269,13 @@ class TabletBody extends StatelessWidget {
                                 TextSpan(
                                   children: [
                                     TextSpan(
-                                      text: 'Tech I',
+                                      text: 'My',
                                       style: GoogleFonts.chakraPetch(
                                         textStyle: textStyles.HeadingI,
                                       ),
                                     ),
                                     TextSpan(
-                                      text: ' Love',
+                                      text: ' Skills',
                                       style: GoogleFonts.chakraPetch(
                                         textStyle: textStyles.HeadingB,
                                       ),

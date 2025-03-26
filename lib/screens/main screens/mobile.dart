@@ -233,13 +233,13 @@ class _MobileBodyState extends State<MobileBody> {
                             TextSpan(
                               children: [
                                 TextSpan(
-                                  text: 'Tech I',
+                                  text: 'My',
                                   style: GoogleFonts.chakraPetch(
                                     textStyle: textStyles.HeadingI,
                                   ),
                                 ),
                                 TextSpan(
-                                  text: ' Love',
+                                  text: ' Skills',
                                   style: GoogleFonts.chakraPetch(
                                     textStyle: textStyles.HeadingB,
                                   ),

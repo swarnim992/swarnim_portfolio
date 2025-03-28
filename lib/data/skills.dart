@@ -6,6 +6,7 @@ final List<Skill> skills = [
   Skill(svgPath: 'assets/svg/python.svg', name: 'Python'),
   Skill(svgPath: 'assets/svg/cpp.svg', name: 'C++'),
   Skill(svgPath: 'assets/svg/git.svg', name: 'Git'),
+  Skill(svgPath: 'assets/svg/android.svg', name: 'Android'),
   Skill(svgPath: 'assets/svg/silverstripe.svg', name: 'Silverstripe'),
   Skill(svgPath: 'assets/svg/html.svg', name: 'HTML'),
   Skill(svgPath: 'assets/svg/react.svg', name: 'React'),

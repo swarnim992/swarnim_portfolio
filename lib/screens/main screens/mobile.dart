@@ -468,6 +468,24 @@ class _MobileBodyState extends State<MobileBody> {
                                   ),
                                 ),
                               ),
+                              SizedBox(
+                                width: deviceWidth * mobile_SVGContainer.width,
+                                //height: deviceWidth * mobile_SVGContainer.height,
+                                child: Center(
+                                  child: Custom_tooltip(
+                                    message: skills[11].name,
+                                    child: SvgPicture.asset(
+                                      skills[11].svgPath,
+
+                                      // color: textStyles.B.color,
+                                      width:
+                                          deviceWidth *
+                                          mobile_SVGContainer.width,
+                                      //height: deviceWidth * mobile_SVGContainer.height,
+                                    ),
+                                  ),
+                                ),
+                              ),
                             ],
                           ),
                         ],

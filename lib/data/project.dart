@@ -57,7 +57,7 @@ List<Project> projects = [
     description:
         "Automation Script Making is a Python-based project that automates data extraction, processing, and alerting by gathering information from various websites and notifying users of relevant matches.",
     icon: Icons.autofps_select_outlined,
-    flutterSvg: "assets/svg/python.svg",
+    flutterSvg: "assets/svg/git.svg",
     dartSvg: "assets/svg/python.svg",
     keyFeatures:
         "• Optimized Data Processing.\n• Web Data Scraping.\n• Automated Alerts.\n• Performance Optimization.",
@@ -111,6 +111,22 @@ List<Project> projects = [
         "• Built with efficient Flutter code for smooth transitions and animations.\n• State Management with GetX.\n• User-Friendly UI.\n• Interact with stories just like Instagram.",
     githubLink: "https://github.com/swarnim992/instaStoryApp",
     demoVideoLink: "https://instastorylite.netlify.app/",
+    screenshot1: "",
+    screenshot2: "",
+  ),
+
+  Project(
+    image: "assets/project/blood.png",
+    title: "Blood Connector",
+    description:
+        "Blood Connector is a native Android application designed to quickly connect users and hospitals with blood donors in emergencies, ensuring fast and reliable access to life-saving resources.",
+    icon: Icons.bloodtype_outlined,
+    flutterSvg: "assets/svg/java.svg",
+    dartSvg: "assets/svg/android.svg",
+    keyFeatures:
+        "• Secure authentication and profile management via Firebase..\n• Quickly find and request blood from registered donors..\n• Real-time authentication and data synchronization.",
+    githubLink: "https://github.com/swarnim992/Blood_Connector",
+    demoVideoLink: "",
     screenshot1: "",
     screenshot2: "",
   ),

@@ -621,7 +621,7 @@ class _DesktopBodyState extends State<DesktopBody> {
                                     itemBuilder: (context, index) {
                                       return GestureDetector(
                                         onTap: () {
-                                          // navigateTo(context, toResponsiveLayout_project(initialIndex: index));
+                                          navigateTo(context, ResponstiveProjects(initialIndex: index));
                                         },
                                         child: MouseRegion(
                                           cursor: SystemMouseCursors.click,

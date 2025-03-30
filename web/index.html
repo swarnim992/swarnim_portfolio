@@ -1,87 +1,195 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
   <base href="$FLUTTER_BASE_HREF">
-
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
-
-  <!-- iOS meta tags & icons -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Hi, I'm Swarnim Jain, a Software Engineer passionate about building innovative tech solutions.">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="portfolio">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>Swarnim Jain</title>
+  <meta name="apple-mobile-web-app-title" content="Swarnim Jain">
+  <link rel="apple-touch-icon" sizes="192x192" href="icons/Icon-192.png">
+  <link rel="icon" type="image/png" href="favicon.png">
   <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#212121">
+  <title>Swarnim Jain</title>
 
   <style>
-    /* Full-screen black background */
-    body {
-      background-color: black;
+    /* Global Reset */
+    * {
+      box-sizing: border-box;
       margin: 0;
-      overflow: hidden;
+      padding: 0;
+    }
+
+    body {
+      background: #0d0d0d;
+      margin: 0;
       display: flex;
       justify-content: center;
       align-items: center;
+      min-height: 100vh;
+      font-family: "Poppins", sans-serif;
+      overflow: hidden;
+    }
+
+    /* Gradient Background Animation */
+    .background-animation {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(-45deg, #1a1a2e, #16213e, #0f3460, #1b1b2f);
+      background-size: 400% 400%;
+      animation: gradientShift 8s infinite ease-in-out;
+      z-index: -1;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Loading Card */
+    .card {
+      background: rgba(33, 33, 33, 0.9);
+      width: 100vw;
       height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
     }
-  
-    /* Loading text or spinner */
-    #loading-indicator {
+
+    .card.hide {
+      opacity: 0;
+      transform: scale(1.1);
+      pointer-events: none;
+    }
+
+    /* Loader Text Animation */
+    .loader {
       color: white;
-      font-size: 20px;
-      font-family: Arial, sans-serif;
-      text-align: center;
+      font-size: 26px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
-  
-    /* Optional: Animated Spinner */
-    .spinner {
-      border: 4px solid rgba(255, 255, 255, 0.2);
-      border-top: 4px solid white;
-      border-radius: 50%;
-      width: 40px;
+
+    .loader p {
+      animation: pulse 1.5s infinite;
+    }
+
+    /* Pulsating Effect */
+    @keyframes pulse {
+      0% { opacity: 1; }
+      50% { opacity: 0.5; }
+      100% { opacity: 1; }
+    }
+
+    .words {
+      overflow: hidden;
       height: 40px;
-      animation: spin 1s linear infinite;
-      margin: 20px auto;
+      position: relative;
+      width: 180px;
     }
-  
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
+
+    .word {
+      display: block;
+      height: 100%;
+      color: #956afa;
+      animation: spinWords 10s infinite;
+      line-height: 40px;
+    }
+
+    /* Word Sliding Animation */
+    @keyframes spinWords {
+      0%, 10% { transform: translateY(0%); }
+      20%, 30% { transform: translateY(-100%); }
+      40%, 50% { transform: translateY(-200%); }
+      60%, 70% { transform: translateY(-300%); }
+      80%, 90% { transform: translateY(-400%); }
+      100% { transform: translateY(-500%); }
+    }
+
+    /* Flutter Container */
+    #flutter-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      opacity: 0;
+      transition: opacity 0.8s ease-in;
+    }
+
+    #flutter-container.show {
+      opacity: 1;
+    }
+
+    /* Mobile Responsiveness */
+    @media screen and (max-width: 700px) {
+      .loader {
+        font-size: 20px;
+      }
+
+      .words {
+        width: 120px;
+      }
     }
   </style>
-  
 </head>
+
 <body>
-  <div id="loading-indicator">
-    <div class="spinner"></div>
-    <p>Loading...</p>
+  <!-- Background Animation -->
+  <div class="background-animation"></div>
+
+  <!-- Flutter App -->
+  <div id="flutter-container"></div>
+
+  <!-- Loading Card -->
+  <div class="card">
+    <div class="loader">
+      <p>Loading</p>
+      <div class="words">
+        <span class="word">Widgets</span>
+        <span class="word">Projects</span>
+        <span class="word">Portfolio</span>
+        <span class="word">Experience</span>
+        <span class="word">Skills</span>
+      </div>
+    </div>
   </div>
-  
-  <script src="flutter_bootstrap.js" async></script>
+
   <script>
-    window.addEventListener('load', function () {
-      document.getElementById('loading-indicator').style.display = 'none';
+    document.addEventListener("DOMContentLoaded", function () {
+      const card = document.querySelector('.card');
+      const flutterContainer = document.querySelector('#flutter-container');
+
+      // Load Flutter and show transition when it's ready
+      window.addEventListener('flutter-first-frame', function () {
+        card.classList.add('hide');
+        flutterContainer.classList.add('show');
+        
+        // Remove the loader after transition
+        setTimeout(() => {
+          card.style.display = 'none';
+        }, 600);
+      });
+
+      // Dynamically Load Flutter Bootstrap
+      const script = document.createElement('script');
+      script.src = "flutter_bootstrap.js";
+      script.async = true;
+      document.body.appendChild(script);
     });
   </script>
-  
 </body>
+
 </html>

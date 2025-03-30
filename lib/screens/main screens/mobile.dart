@@ -970,7 +970,13 @@ class _MobileBodyState extends State<MobileBody> {
                                               ),
                                             ),
                                             Text(
-                                              Experiences[index].duration,
+                                              Experiences[index].endTime ==
+                                                      'Present'
+                                                  ? dateCalculateExpe(
+                                                    Experiences[index]
+                                                        .startTime,
+                                                  )
+                                                  : Experiences[index].duration,
                                               style: GoogleFonts.chakraPetch(
                                                 textStyle: textStyles.edu_P_L,
                                               ),

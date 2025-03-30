@@ -5,6 +5,7 @@ import 'dart:typed_data';
 import 'package:http/http.dart' as http;
 import 'package:Swarnim_Jain/functions/notifySnackBar.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:intl/intl.dart';
 
 void openEmail() async {
   final Uri params = Uri(
@@ -35,6 +36,37 @@ String convertToRawLink(String url) {
     // Return the original URL if it's not in the expected format
     return 'Invalid GitHub file link';
   }
+}
+
+String dateCalculateExpe(String date) {
+  DateTime currentDate = DateTime.now();
+
+  // Parse the given string into a DateTime object
+  DateTime sDate = DateFormat('MMM yyyy').parse(date);
+
+  // Calculate the difference in years and months
+  int yearDiff = currentDate.year - sDate.year;
+  int monthDiff = currentDate.month - sDate.month;
+
+  // Adjust if the month difference is negative
+  if (monthDiff < 0) {
+    yearDiff -= 1;
+    monthDiff += 12;
+  }
+
+  if (monthDiff == 0) {
+    return '$yearDiff Year';
+  }
+
+  String year = 'Year';
+  String month = 'Month';
+
+  if (yearDiff > 1) year = 'Years';
+  if (monthDiff > 1) month = 'Months';
+
+  if (yearDiff == 0) return '$monthDiff $month';
+
+  return '$yearDiff $year $monthDiff $month';
 }
 
 // Function to download a file from a URL

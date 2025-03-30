@@ -962,7 +962,14 @@ class _DesktopBodyState extends State<DesktopBody> {
                                                     ),
                                                     Text(
                                                       Experiences[index]
-                                                          .duration,
+                                                                  .endTime ==
+                                                              'Present'
+                                                          ? dateCalculateExpe(
+                                                            Experiences[index]
+                                                                .startTime,
+                                                          )
+                                                          : Experiences[index]
+                                                              .duration,
                                                       style:
                                                           GoogleFonts.chakraPetch(
                                                             textStyle: textStyles

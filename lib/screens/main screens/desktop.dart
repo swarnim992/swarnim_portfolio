@@ -621,7 +621,12 @@ class _DesktopBodyState extends State<DesktopBody> {
                                     itemBuilder: (context, index) {
                                       return GestureDetector(
                                         onTap: () {
-                                          navigateTo(context, ResponstiveProjects(initialIndex: index));
+                                          navigateTo(
+                                            context,
+                                            ResponstiveProjects(
+                                              initialIndex: index,
+                                            ),
+                                          );
                                         },
                                         child: MouseRegion(
                                           cursor: SystemMouseCursors.click,
@@ -661,7 +666,7 @@ class _DesktopBodyState extends State<DesktopBody> {
                                                       width:
                                                           deviceWidth * 0.115,
                                                       child: AutoSizeText(
-                                                        minFontSize: 5,
+                                                        minFontSize: 15,
                                                         maxFontSize: 15,
                                                         maxLines: 1,
                                                         style:

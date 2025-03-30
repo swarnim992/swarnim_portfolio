@@ -20,6 +20,22 @@ List<Project> projects = [
   ),
 
   Project(
+    image: "assets/project/hackathon.png",
+    title: "AI-Powered Financial Insights Dashboard",
+    description:
+        "A smart system that analyzes financial data in real time, providing insights and helping with better decision-making.",
+    icon: Icons.analytics_outlined,
+    flutterSvg: "assets/svg/chatgpt.svg",
+    dartSvg: "assets/svg/python.svg",
+    keyFeatures:
+        "• Developed scalable APIs for real-time financial data processing.\n• AI-Driven Portfolio Analysis.\n• Scalable Backend Architecture.\n• Dynamic Data Visualization.",
+    githubLink: "",
+    demoVideoLink: "",
+    screenshot1: "",
+    screenshot2: "",
+  ),
+
+  Project(
     image: "assets/project/gully.png",
     title: "Gully Cricket",
     description:
@@ -126,6 +142,23 @@ List<Project> projects = [
     keyFeatures:
         "• Secure authentication and profile management via Firebase..\n• Quickly find and request blood from registered donors..\n• Real-time authentication and data synchronization.",
     githubLink: "https://github.com/swarnim992/Blood_Connector",
+    demoVideoLink: "",
+    screenshot1: "",
+    screenshot2: "",
+  ),
+
+  Project(
+    image: "assets/project/vehical.png",
+    title: "Vehicle Overload Detection System",
+    description:
+        "A smart system that tracks vehicle load in real time and automatically sends alerts when an overload is detected.",
+    icon: Icons.local_shipping_outlined,
+    flutterSvg: "assets/svg/arduino.svg",
+    dartSvg: "assets/svg/cpp.svg",
+    keyFeatures:
+        "• Arduino Nano-Based System.\n• GSM Alert System.\n• Optimized C++ Code.",
+    githubLink:
+        "https://github.com/swarnim992/Vehicle-Overload-Detection-System",
     demoVideoLink: "",
     screenshot1: "",
     screenshot2: "",

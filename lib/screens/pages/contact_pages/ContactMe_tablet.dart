@@ -400,7 +400,7 @@ class _ContactMe_tablet extends State<ContactMe_tablet> {
                           ),
                         ),
                       ),
-                      //hackerrank
+                      //codechef
                       MouseRegion(
                         cursor: SystemMouseCursors.click,
                         child: GestureDetector(

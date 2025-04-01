@@ -375,9 +375,7 @@ class _ContactMe_mobileState extends State<ContactMe_mobile> {
                     cursor: SystemMouseCursors.click,
                     child: GestureDetector(
                       onTap: () {
-                        urlLaunch(
-                          "https://www.hackerrank.com/profile/swarnimjain992",
-                        );
+                        urlLaunch("https://www.codechef.com/users/swarnim992");
                       },
                       child: CustomBox(
                         isHover: true,
@@ -399,7 +397,7 @@ class _ContactMe_mobileState extends State<ContactMe_mobile> {
                             height:
                                 ContactMe_containerStyle_tablet.svgcontHeight,
 
-                            "assets/svg/hackerrank.svg",
+                            "assets/svg/codechef.svg",
                             // ignore: deprecated_member_use
                             // color: textStyles.B.color,
                             // width: deviceWidth * 0.06,

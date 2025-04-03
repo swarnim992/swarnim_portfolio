@@ -2,22 +2,22 @@ import 'package:flutter/material.dart';
 import 'package:Swarnim_Jain/models/models.dart';
 
 List<Project> projects = [
-  Project(
-    image: "assets/project/quotestream.png",
-    title: "Quotestream Mobile",
-    description:
-        "Quotestream Mobile is a feature-rich stock market app built with Flutter, providing real-time financial data, portfolio management, and market insights on the go.",
-    icon: Icons.quora_outlined,
-    flutterSvg: "assets/svg/flutter.svg",
-    dartSvg: "assets/svg/dart.svg",
-    keyFeatures:
-        "• Real-time stock quotes, forex, and market updates.\n• Advanced Portfolio Management.\n• Interactive Charts & Watchlists.\n• Efficient State Management.",
-    githubLink: "",
-    demoVideoLink:
-        "https://play.google.com/store/apps/details?id=com.quotemedia.QuotestreamMobile&hl=en_IN",
-    screenshot1: "",
-    screenshot2: "",
-  ),
+  // Project(
+  //   image: "assets/project/quotestream.png",
+  //   title: "Quotestream Mobile",
+  //   description:
+  //       "Quotestream Mobile is a feature-rich stock market app built with Flutter, providing real-time financial data, portfolio management, and market insights on the go.",
+  //   icon: Icons.quora_outlined,
+  //   flutterSvg: "assets/svg/flutter.svg",
+  //   dartSvg: "assets/svg/dart.svg",
+  //   keyFeatures:
+  //       "• Real-time stock quotes, forex, and market updates.\n• Advanced Portfolio Management.\n• Interactive Charts & Watchlists.\n• Efficient State Management.",
+  //   githubLink: "",
+  //   demoVideoLink:
+  //       "https://play.google.com/store/apps/details?id=com.quotemedia.QuotestreamMobile&hl=en_IN",
+  //   screenshot1: "",
+  //   screenshot2: "",
+  // ),
 
   Project(
     image: "assets/project/hackathon.png",
@@ -51,21 +51,21 @@ List<Project> projects = [
     screenshot2: "",
   ),
 
-  Project(
-    image: "assets/project/trinity.png",
-    title: "Trinity",
-    description:
-        "Trinity is a SilverStripe CMS-based website that I worked on for ensuring smooth performance, updates, and issue resolution.",
-    icon: Icons.text_fields_sharp,
-    flutterSvg: "assets/svg/html.svg",
-    dartSvg: "assets/svg/silverstripe.svg",
-    keyFeatures:
-        "• Optimizations, and feature enhancements.\n• Performance Improvements.\n• Content & Code Updates.\n• Seamless User Experience.",
-    githubLink: "",
-    demoVideoLink: "https://trinityre.com/",
-    screenshot1: "",
-    screenshot2: "",
-  ),
+  // Project(
+  //   image: "assets/project/trinity.png",
+  //   title: "Trinity",
+  //   description:
+  //       "Trinity is a SilverStripe CMS-based website that I worked on for ensuring smooth performance, updates, and issue resolution.",
+  //   icon: Icons.text_fields_sharp,
+  //   flutterSvg: "assets/svg/html.svg",
+  //   dartSvg: "assets/svg/silverstripe.svg",
+  //   keyFeatures:
+  //       "• Optimizations, and feature enhancements.\n• Performance Improvements.\n• Content & Code Updates.\n• Seamless User Experience.",
+  //   githubLink: "",
+  //   demoVideoLink: "https://trinityre.com/",
+  //   screenshot1: "",
+  //   screenshot2: "",
+  // ),
 
   Project(
     image: "assets/project/automation.png",

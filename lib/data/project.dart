@@ -2,22 +2,22 @@ import 'package:flutter/material.dart';
 import 'package:Swarnim_Jain/models/models.dart';
 
 List<Project> projects = [
-  // Project(
-  //   image: "assets/project/quotestream.png",
-  //   title: "Quotestream Mobile",
-  //   description:
-  //       "Quotestream Mobile is a feature-rich stock market app built with Flutter, providing real-time financial data, portfolio management, and market insights on the go.",
-  //   icon: Icons.quora_outlined,
-  //   flutterSvg: "assets/svg/flutter.svg",
-  //   dartSvg: "assets/svg/dart.svg",
-  //   keyFeatures:
-  //       "• Real-time stock quotes, forex, and market updates.\n• Advanced Portfolio Management.\n• Interactive Charts & Watchlists.\n• Efficient State Management.",
-  //   githubLink: "",
-  //   demoVideoLink:
-  //       "https://play.google.com/store/apps/details?id=com.quotemedia.QuotestreamMobile&hl=en_IN",
-  //   screenshot1: "",
-  //   screenshot2: "",
-  // ),
+  Project(
+    image: "assets/project/quotestream.png",
+    title: "Quotestream Mobile",
+    description:
+        "Quotestream Mobile is a feature-rich stock market app built with Flutter, providing real-time financial data, portfolio management, and market insights on the go.",
+    icon: Icons.quora_outlined,
+    flutterSvg: "assets/svg/flutter.svg",
+    dartSvg: "assets/svg/dart.svg",
+    keyFeatures:
+        "• Real-time stock quotes, forex, and market updates.\n• Advanced Portfolio Management.\n• Interactive Charts & Watchlists.\n• Efficient State Management.",
+    githubLink: "",
+    demoVideoLink:
+        "https://play.google.com/store/apps/details?id=com.quotemedia.QuotestreamMobile&hl=en_IN",
+    screenshot1: "",
+    screenshot2: "",
+  ),
 
   Project(
     image: "assets/project/hackathon.png",

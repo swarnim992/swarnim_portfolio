@@ -51,21 +51,21 @@ List<Project> projects = [
     screenshot2: "",
   ),
 
-  Project(
-    image: "assets/project/trinity.png",
-    title: "Trinity",
-    description:
-        "Trinity is a SilverStripe CMS-based website that I worked on for ensuring smooth performance, updates, and issue resolution.",
-    icon: Icons.text_fields_sharp,
-    flutterSvg: "assets/svg/html.svg",
-    dartSvg: "assets/svg/silverstripe.svg",
-    keyFeatures:
-        "• Optimizations, and feature enhancements.\n• Performance Improvements.\n• Content & Code Updates.\n• Seamless User Experience.",
-    githubLink: "",
-    demoVideoLink: "https://trinityre.com/",
-    screenshot1: "",
-    screenshot2: "",
-  ),
+  // Project(
+  //   image: "assets/project/trinity.png",
+  //   title: "Trinity",
+  //   description:
+  //       "Trinity is a SilverStripe CMS-based website that I worked on for ensuring smooth performance, updates, and issue resolution.",
+  //   icon: Icons.text_fields_sharp,
+  //   flutterSvg: "assets/svg/html.svg",
+  //   dartSvg: "assets/svg/silverstripe.svg",
+  //   keyFeatures:
+  //       "• Optimizations, and feature enhancements.\n• Performance Improvements.\n• Content & Code Updates.\n• Seamless User Experience.",
+  //   githubLink: "",
+  //   demoVideoLink: "https://trinityre.com/",
+  //   screenshot1: "",
+  //   screenshot2: "",
+  // ),
 
   Project(
     image: "assets/project/automation.png",

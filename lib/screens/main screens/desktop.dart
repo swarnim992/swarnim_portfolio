@@ -1,3 +1,4 @@
+import 'package:Swarnim_Jain/data/constants.dart';
 import 'package:Swarnim_Jain/data/educatiton.dart';
 import 'package:Swarnim_Jain/data/experience.dart';
 import 'package:Swarnim_Jain/data/project.dart';
@@ -443,7 +444,7 @@ class _DesktopBodyState extends State<DesktopBody> {
                                 style: GoogleFonts.chakraPetch(
                                   textStyle: textStyles.P1,
                                 ),
-                                "Experienced Software Development Engineer specializing in Flutter for Android and iOS. Skilled in building intuitive UIs, optimizing backend systems, and ensuring seamless performance. Passionate about process improvement, collaboration, and delivering high-quality solutions in cross-functional teams.",
+                                Profile_Summary,
                               ),
                             ],
                           ),

@@ -20,6 +20,21 @@ List<Project> projects = [
   ),
 
   Project(
+    image: "assets/project/rentroll.png",
+    title: "Rent Roll",
+    description:
+        "Built a Rent Roll client portal using Django with role-based access and automated document processing, streamlining rental operations and financial workflows.",
+    icon: Icons.real_estate_agent_outlined,
+    flutterSvg: "assets/svg/python.svg",
+    dartSvg: "assets/svg/django.svg",
+    keyFeatures:
+        "• Role-based Access Control: Secure login system for Admins, Analysts, and Users.\n• OCI Integration: Safe file storage with automated Excel & PDF parsing.\n• Auto Interest Calculation: Boosted financial accuracy by 70% with dynamic computations.\n• Workflow Automation: Reduced manual effort, improving user efficiency significantly.",
+    githubLink: "",
+    demoVideoLink: "",
+    screenshot1: "",
+    screenshot2: "",
+  ),
+  Project(
     image: "assets/project/hackathon.png",
     title: "AI-Powered Financial Insights Dashboard",
     description:
@@ -66,7 +81,6 @@ List<Project> projects = [
   //   screenshot1: "",
   //   screenshot2: "",
   // ),
-
   Project(
     image: "assets/project/automation.png",
     title: "Automation Alert",

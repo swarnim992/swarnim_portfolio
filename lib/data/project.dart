@@ -3,7 +3,7 @@ import 'package:Swarnim_Jain/models/models.dart';
 
 List<Project> projects = [
   Project(
-    image: "assets/project/quotestream.png",
+    image: "assets/project/quotestream1.png",
     title: "Quotestream Mobile",
     description:
         "Quotestream Mobile is a feature-rich stock market app built with Flutter, providing real-time financial data, portfolio management, and market insights on the go.",
@@ -45,6 +45,22 @@ List<Project> projects = [
     keyFeatures:
         "• Developed scalable APIs for real-time financial data processing.\n• AI-Driven Portfolio Analysis.\n• Scalable Backend Architecture.\n• Dynamic Data Visualization.",
     githubLink: "",
+    demoVideoLink: "",
+    screenshot1: "",
+    screenshot2: "",
+  ),
+
+  Project(
+    image: "assets/project/todo.png",
+    title: "ToDo Using Spring boot",
+    description:
+        "Built a secure ToDo backend with Spring Boot featuring full CRUD APIs, role-based access, and Swagger documentation to boost efficiency and team collaboration.",
+    icon: Icons.checklist,
+    flutterSvg: "assets/svg/spring_boot.svg",
+    dartSvg: "assets/svg/java.svg",
+    keyFeatures:
+        "• CRUD API with Spring Boot: Handled all create, read, update, and delete operations.\n• Role-based Authentication: Secured access using user roles and permissions.\n• Swagger Integration: Easy API testing and clear documentation for developers.\n• Improved Efficiency: Boosted backend speed and code maintainability by 90%.",
+    githubLink: "https://github.com/swarnim992/todo_springboot",
     demoVideoLink: "",
     screenshot1: "",
     screenshot2: "",

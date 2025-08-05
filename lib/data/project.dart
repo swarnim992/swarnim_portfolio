@@ -4,26 +4,25 @@ import 'package:Swarnim_Jain/models/models.dart';
 List<Project> projects = [
   Project(
     image: "assets/project/quotestream1.png",
-    title: "Quotestream Mobile",
+    title: "Financial Mobile Application",
     description:
-        "Quotestream Mobile is a feature-rich stock market app built with Flutter, providing real-time financial data, portfolio management, and market insights on the go.",
+        "Financial Mobile is a feature-rich stock market app built with Flutter, providing real-time financial data, portfolio management, and market insights on the go.",
     icon: Icons.quora_outlined,
     flutterSvg: "assets/svg/flutter.svg",
     dartSvg: "assets/svg/dart.svg",
     keyFeatures:
         "• Real-time stock quotes, forex, and market updates.\n• Advanced Portfolio Management.\n• Interactive Charts & Watchlists.\n• Efficient State Management.",
     githubLink: "",
-    demoVideoLink:
-        "https://play.google.com/store/apps/details?id=com.quotemedia.QuotestreamMobile&hl=en_IN",
+    demoVideoLink: "",
     screenshot1: "",
     screenshot2: "",
   ),
 
   Project(
     image: "assets/project/rentroll.png",
-    title: "Rent Roll",
+    title: "Rent Portal",
     description:
-        "Built a Rent Roll client portal using Django with role-based access and automated document processing, streamlining rental operations and financial workflows.",
+        "Built a Rent client portal using Django with role-based access and automated document processing, streamlining rental operations and financial workflows.",
     icon: Icons.real_estate_agent_outlined,
     flutterSvg: "assets/svg/python.svg",
     dartSvg: "assets/svg/django.svg",

@@ -9,7 +9,7 @@ final List<Skill> skills = [
   Skill(svgPath: 'assets/svg/spring_boot.svg', name: 'SpringBoot'),
   Skill(svgPath: 'assets/svg/git.svg', name: 'Git'),
   Skill(svgPath: 'assets/svg/android.svg', name: 'Android'),
-  Skill(svgPath: 'assets/svg/silverstripe.svg', name: 'Silverstripe'),
+  Skill(svgPath: 'assets/svg/fastapi.svg', name: 'Fast API'),
   Skill(svgPath: 'assets/svg/dart.svg', name: 'Dart'),
   Skill(svgPath: 'assets/svg/mysql.svg', name: 'MySQL'),
   Skill(svgPath: 'assets/svg/javascript.svg', name: 'JavaScript'),

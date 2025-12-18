@@ -3,6 +3,22 @@ import 'package:Swarnim_Jain/models/models.dart';
 
 List<Project> projects = [
   Project(
+    image: "assets/project/globle_dealer.png",
+    title: "Global Dealer Operations & Marketing Platform",
+    description:
+        "Global cloud-based dealer operations and marketing platform built using Python FastAPI and RESTful microservices.",
+    icon: Icons.settings_system_daydream_outlined,
+    flutterSvg: "assets/svg/python.svg",
+    dartSvg: "assets/svg/fastapi.svg",
+    keyFeatures:
+        "• Developed 100+ secure Python REST APIs using FastAPI in a microservices architecture.\n• Implemented role-based access control and API gateway based request handling.\n• Improved backend performance by 30% through optimized regional and product-level data aggregation.\n• Deployed on cloud infrastructure with a focus on scalability, security, and high availability.",
+    githubLink: "",
+    demoVideoLink: "",
+    screenshot1: "",
+    screenshot2: "",
+  ),
+
+  Project(
     image: "assets/project/quotestream1.png",
     title: "Financial Mobile Application",
     description:
@@ -39,7 +55,7 @@ List<Project> projects = [
     description:
         "A smart system that analyzes financial data in real time, providing insights and helping with better decision-making.",
     icon: Icons.analytics_outlined,
-    flutterSvg: "assets/svg/chatgpt.svg",
+    flutterSvg: "assets/svg/fastapi.svg",
     dartSvg: "assets/svg/python.svg",
     keyFeatures:
         "• Developed scalable APIs for real-time financial data processing.\n• AI-Driven Portfolio Analysis.\n• Scalable Backend Architecture.\n• Dynamic Data Visualization.",
